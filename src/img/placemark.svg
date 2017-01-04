@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="33px" viewBox="0 0 16 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>pin copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all-results" transform="translate(-904.000000, -703.000000)">
+            <g id="Results" transform="translate(435.000000, 401.000000)">
+                <g id="pin-copy" transform="translate(469.000000, 302.000000)">
+                    <g id="Capa_1">
+                        <path d="M8,16.2105263 L8,33" id="Shape" stroke="#556080" stroke-width="2"></path>
+                        <ellipse id="Oval" fill="#DD352E" cx="8" cy="8.10526316" rx="8" ry="8.10526316"></ellipse>
+                        <ellipse id="Oval" fill="#F76363" cx="5.14285714" cy="5.78947368" rx="1.71428571" ry="1.73684211"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

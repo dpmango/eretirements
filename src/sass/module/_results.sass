@@ -1,0 +1,314 @@
+// Results page
+
+.ico-download
+	background: url('../img/ico-download.svg') no-repeat center
+	width: 20px
+	margin-left: 10px
+	height: 20px
+	vertical-align: -3px
+
+.category__title
+	font-size: 28px
+	font-weight: 500
+	margin-bottom: 20px
+	@include mq($until: desktop)
+		font-size: 24px
+	@include mq($until: mobile)
+		font-size: 20px
+		line-height: 1.1em
+		text-align: center
+
+.category__results__map
+	position: relative
+	margin-top: 40px
+
+.category__results__top-cities
+	font-size: 20px
+	font-weight: 700
+	@include mq($until: wide)
+		font-size: 18px
+	@include mq($until: desktop)
+		font-size: 16px
+	@include mq($until: tablet)
+		margin: 0 auto 20px auto
+.category__results__top-cities__item
+	margin-bottom: 3px
+
+	span
+		margin-left: 20px
+		vertical-align: 0px
+
+	.ico-num
+		color: white
+		font-style: normal
+		background: $blue
+		line-height: 1em
+		border-radius: 50%
+		padding: 4px 5px 0px 5px
+		min-width: 28px
+		min-height: 28px
+		@include mq($until: wide)
+			min-width: 24px
+			min-height: 24px
+			padding: 3px 5px 0px 5px
+		@include mq($until: desktop)
+			min-width: 22px
+			min-height: 22px
+			padding-top: 2px
+		text-align: center
+
+.ico-placemark
+	background: url('../img/placemark.svg') no-repeat center
+	width: 16px
+	height: 33px
+	position: absolute
+	z-index: 3
+
+// Highlights
+
+.category__highlight
+
+.category__highlight__wrapper
+	padding: 20px 35px 30px 35px
+	border-bottom: 1px solid $borderColor
+	@include mq($until: bp860)
+		padding: 20px 20px 25px 20px
+	.category__highlight__stats__item .category__results__title
+		@include mq($until: bp860)
+			font-size: 16px
+
+.category__highlight__characteristics
+	padding-left: 35px
+	padding-right: 35px
+	font-size: 18px
+	@include mq($until: bp860)
+		font-size: 16px
+		padding-left: 20px
+		padding-right: 20px
+	@include mq($until: mobile)
+		.text-center
+			text-align: left
+		.text-right
+			text-align: left
+
+.category__highlight__characteristics__item
+	padding-bottom: 7px
+
+.category__highlight__stats
+	margin-top: 20px
+
+.category__highlight__stats__item
+	@include mq($until: tablet)
+		min-height: 270px
+		margin-bottom: 20px
+.category__highlight__stats__item--overall
+	position: relative
+	@include border()
+	@include border-radius(50%)
+	width: 170px
+	height: 170px
+	margin: 0 auto
+	.gray
+		@include absolute-x-center()
+		bottom: 0
+		z-index: 1
+		background: $borderColor
+		@include border-radius(50%)
+		width: 120px
+		height: 120px
+	.blue
+		@include absolute-x-center()
+		bottom: 0
+		z-index: 2
+		background: $blue
+		@include border-radius(50%)
+		color: white
+		font-size: 22px
+		font-weight: 700
+		width: 85px
+		height: 85px
+		span
+			display: inline-block
+			@include absolute-x-center()
+			bottom: 25px
+			z-index: 3
+
+.category__highlight__stats__helper
+	text-align: center
+	line-height: 17px
+	margin-top: 10px
+
+.vertical-text
+	@include transform(rotate(270deg))
+	font-size: 12px
+	position: absolute
+	@include mq($until: bp860)
+		font-size: 10px
+
+	&.small
+		font-size: 10px
+		float: left
+		top: 57%
+		left: -60px
+	&.cost
+		left: -30px
+		top: 40%
+
+	&.age
+		top: 45%
+		left: -60px
+	&.income
+		top: 42%
+		left: -79px
+	&.growth
+		top: 43%
+		left: -66px
+
+
+.category__highlight__stats__item--geo
+	position: relative
+	@include border()
+	@include border-radius(5px)
+	max-height: 170px
+	height: 170px
+	margin: 0 auto 0 20px
+	.chart-table
+		position: absolute
+		bottom: 0
+		width: 20px
+		background: $borderColor
+		content: ' '
+		z-index: 4
+		@include mq($until: bp860)
+			width: 15px
+		@include mq($until: mobile)
+			width: 20px
+		&.top
+			background: $blue
+			&+ .vertical-text
+				color: $blue
+				font-weight: 500
+				left: -23px
+	.wrap
+		position: relative
+	.region
+		position: absolute
+		bottom: 0
+		z-index: 3
+		content: ' '
+		.vertical-text
+			min-width: 65px
+			left: -24px
+			bottom: -50px
+			text-align: right
+	.region-1
+		@extend .region
+		left: 10%
+
+	.region-2
+		@extend .region
+		left: 27%
+	.region-3
+		@extend .region
+		left: 44%
+	.region-4
+		@extend .region
+		left: 61%
+	.region-5
+		@extend .region
+		left: 82%
+
+.category__highlight__stats__item--city
+	position: relative
+	@include border()
+	background: $blue
+	@include border-radius(5px)
+	max-height: 135px
+	height: 135px
+	width: 160px
+	max-width: 160px
+	margin: 0 auto 80px auto
+	@include mq($until: bp860)
+		width: 100%
+	.chart-table
+		position: absolute
+		bottom: 0
+		width: 20px
+		background: $borderColor
+		content: ' '
+		z-index: 4
+		&.top
+			background: $blue
+			&+ .vertical-text
+				color: $blue
+				font-weight: 500
+				left: -40px
+	.wrap
+		position: relative
+	.region
+		position: absolute
+		bottom: 0
+		z-index: 3
+		content: ' '
+		.vertical-text
+			min-width: 100px
+			left: -41px
+			bottom: -65px
+			text-align: right
+	.region-1
+		@extend .region
+		left: 20%
+	.region-2
+		@extend .region
+		left: 45%
+	.region-3
+		@extend .region
+		left: 70%
+
+
+.category__highlight__stats__item--range
+	text-align: center
+
+	.label-text
+		font-size: 12px
+		margin-top: -5px
+		margin-bottom: 8px
+		&:last-child
+			margin-bottom: 0
+			margin-top: 8px
+	.range
+		position: relative
+	.range__main
+		width: 10px
+		margin: 0 auto
+		background: $borderColor
+		@include border-radius(3px)
+		height: 190px
+	.range__edge
+		background: $blue
+		@include absolute-x-center()
+		width: 35px
+		height: 5px
+		div
+			position: relative
+		span
+			position: absolute
+			right: -40px
+			top: -8px
+
+			display: inline-block
+	.range__mid
+		@include absolute-x-center()
+		background: rgba($borderColor, .5)
+		width: 35px
+		
+
+
+// Listings
+
+.category__results__listing__name
+	font-size: 18px
+	font-weight: 500
+	margin-top: 10px
+	line-height: 1em
+	margin-bottom: -5px

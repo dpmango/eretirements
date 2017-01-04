@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="category-walkthrough" transform="translate(-1153.000000, -560.000000)" fill="#196CA7" stroke="#196CA7">
+            <g id="annotation">
+                <g id="Group-4" transform="translate(848.000000, 465.000000)">
+                    <path d="M313.088068,96.1203143 C312.933068,96.2753139 312.933068,96.5332852 313.088068,96.6879234 L315.995484,99.5953392 L306.401409,99.5953392 C306.177762,99.5957005 306,99.7734622 306,99.9971096 C306,100.220757 306.177762,100.4043 306.401409,100.4043 L315.995484,100.4043 L313.088068,103.306296 C312.933068,103.466715 312.933068,103.725047 313.088068,103.879686 C313.248487,104.040105 313.50682,104.040105 313.661458,103.879686 L317.257158,100.283985 C317.417577,100.128986 317.417577,99.8710144 317.257158,99.7163761 L313.661458,96.1203143 C313.506458,95.9598952 313.248487,95.9598952 313.088068,96.1203143 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

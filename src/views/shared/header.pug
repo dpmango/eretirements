@@ -1,0 +1,60 @@
+// HEADER: START
+header.header.header--theme-compact
+  .container
+    .row
+      .col-sm-3
+        .header__navigation
+          span Find the best places to retire
+      .col-sm-6.center
+      .col-sm-3.text-right
+        .header__searchbar
+          form
+            .header__searchbar__submit
+              input(type='submit', name='')
+            input(type='text', placeholder='Search our cities ...')
+    .row.pt5
+      .col-sm-4
+        a(href='#')
+          img.header__logo.img-fluid(src='img/logo.png', alt='')
+      .col-sm-8.text-right
+        .header__navigation.header__navigation--main
+          a(href='#') Destinations
+          a(href='#') Self-assesment
+          a(href='#') Blog
+          a.active(href='#') Eddie’s Retirement
+            .header__profile
+              img.img-fluid.img-rounded(src='images/profile_header.png', alt='')
+
+header.header-mobile
+  .container
+    .row
+      .col-xs-8
+        button#show-me-menu.hamburger.hamburger--collapse(type='button')
+          span.hamburger-box
+            span.hamburger-inner
+        img.img-fluid.header__logo-mobile(src='img/logo.png', alt='')
+      .col-xs-4.text-right
+        #sb-search.sb-search
+          form#demo-2.mobile-header-search-form
+            input(type='search', placeholder='Search ...')
+        .header__profile
+          a(href='#')
+            img.img-fluid.img-rounded(src='images/profile_header.png', alt='')
+section.mobile-nav
+  ul.main-navi
+    li
+      a(href='#') Locations
+    li
+      a(href='#') Self-assesment
+    li
+      a(href='#') Quiz
+    li
+      a(href='#') RetireWire
+    li
+      a(href='#') Services
+    hr
+    li
+      a(href='#') Help
+    li
+      a(href='#') Contacts
+// HEADER: END

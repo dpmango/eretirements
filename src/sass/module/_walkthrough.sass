@@ -1,0 +1,122 @@
+.walkthrough
+	@include absolute-full-wrapper()
+	background: rgba(black, .5)
+	z-index: 99
+	@include mq($until: mobile)
+		display: none
+	&.active-step
+		background: rgba(black, .25)
+
+.walkthrough__wrap
+	position: relative
+	width: 100vw
+	height: 100vh
+
+.walkthrough__message
+	background: white
+	@include border-radius(4px)
+	@include border()
+	@include box-shadow(0,4px,15px,rgba(black, .5))
+	text-align: center
+	padding: 30px 65px
+	max-width: 570px
+	width: 570px
+	margin: 0 auto
+	position: fixed
+	top: 25vh
+	left: 50%
+	@include transform(translateX(-50%))
+
+
+.walkthrough__title
+	font-size: 28px
+	font-weight: 500
+	line-height: 35px
+
+.walkthrough__content
+	font-size: 16px
+	line-height: 19px
+	margin-top: 25px
+	margin-bottom: 30px
+
+// Helpers
+
+.walkthrough__item
+	position: absolute
+	background: white
+	@include border-radius(4px)
+	@include border()
+	@include box-shadow(0,4px,15px,rgba(black, .5))
+	padding: 20px 25px
+	z-index: 100
+	display: none
+	max-width: 300px
+	width: 300px
+
+.walkthrough__item__wrapper
+	position: relative
+	&.left:after
+		display: block
+		content: ' '
+		background: url('../img/walk-left.svg') no-repeat center
+		width: 25px
+		height: 16px
+		position: absolute
+		bottom: -36px
+		left: 35px
+	&.right:after
+		display: block
+		content: ' '
+		background: url('../img/walk-right.svg') no-repeat center
+		width: 21px
+		height: 13px
+		position: absolute
+		bottom: -33px
+		right: 25px
+
+.walkthrough__item--wide
+	max-width: 340px
+	width: 340px
+
+#walkthrough__step1
+	left: 45%
+	top: -120px
+	@include mq($until: desktop)
+		left: 10%
+
+#walkthrough__step2
+	left: 40%
+	top: -40px
+
+#walkthrough__step3
+	right: 5%
+	top: -170px
+
+#walkthrough__step4
+	right: 10%
+	top: -150px
+
+.walkthrough__item__wrapper
+	position: relative
+
+.walkthrough__item__content
+	font-size: 18px
+	line-height: 19px
+	margin-bottom: 15px
+
+.walkthrough__item__link
+	font-size: 16px
+	font-weight: 500
+	color: $blue
+	text-align: right
+	@include transition()
+	&:hover
+		opacity: .8
+
+.ico-next
+	background: url('../img/ico-next.svg') no-repeat center
+	width: 12px
+	height: 8px
+	margin-left: 7px
+	vertical-align: 1px
+

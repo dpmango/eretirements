@@ -1,0 +1,99 @@
+.container
+	width: 100%
+	max-width: 1000px
+	@include transition(all .4s ease)
+	@include mq($until: wide)
+		padding-left: 40px
+		padding-right: 40px
+	@include mq($until: desktop)
+		padding-left: 25px
+		padding-right: 25px
+	@include mq($until: tablet)
+		padding-left: 15px
+		padding-right: 15px
+
+.col-sm-6
+	position: relative
+.fl--right
+	float: right
+	@include mq($until: mobile)
+		float: none
+.fl--left--mobile
+	@include mq($until: mobile)
+		float: left
+
+.text-right
+	text-align: right
+
+.pt5
+  padding-top: 5px
+  
+.mt10
+	margin-top: 10px
+.mt20
+	margin-top: 20px
+.mt30
+	margin-top: 30px
+.mt35
+	margin-top: 35px
+
+.no-pad-l
+	padding-left: 0
+	@include mq($until: mobile)
+		padding-left: 15px
+.img-fluid
+	max-width: 100%
+	height:auto
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left
+//
+.header
+	background: white
+	padding-top: 15px
+	padding-bottom: 30px
+	border-bottom: 1px solid $borderColor
+	@include mq($until: mobile)
+		display: none
+	@include mq($until: tablet)
+		background-position: 15px
+
+.header--theme-compact
+  padding-top: 10px
+  padding-bottom: 5px
+
+.footer
+	background: $blue
+	padding-top: 35px
+	padding-bottom: 10px
+	margin-top: 80px
+	color: white
+	@include mq($until: mobile)
+		margin-top: 50px
+		padding-top: 0px
+
+
+
+.heading
+	margin-top: 60px
+	@include mq($until: mobile)
+		margin-top: 35px
+
+.category
+	margin-top: 40px
+
+.category--results
+	margin-top: 0
+	@include mq($until: mobile)
+		margin-top: 20px
+
+.whitebox
+	background: white
+	@include border()
+	@include border-radius(4px)

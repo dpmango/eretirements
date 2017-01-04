@@ -1,0 +1,189 @@
+.radial-progress {
+	@circle-size: 70px;
+	@circle-background: #79C930;
+	@inset-size: 60px;
+	@inset-background: white;
+	@transition-length: 0.5s;
+	@percentage-color: #303030;
+	@percentage-font-size: 18px;
+	@percentage-text-width: 60px;
+	width:  @circle-size;
+	height: @circle-size;
+
+	border-radius: 50%;
+	.circle {
+		.mask, .fill {
+			width:    @circle-size;
+			height:   @circle-size;
+			position: absolute;
+
+			-webkit-backface-visibility: hidden;
+			transition: -webkit-transform @transition-length;
+			transition: -ms-transform @transition-length;
+			transition: transform @transition-length;
+			border-radius: 50%;
+		}
+		.mask {
+			clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+			.fill {
+				clip: rect(0px, @circle-size/2, @circle-size, 0px);
+				background: @circle-background;
+			}
+		}
+	}
+	.inset {
+		width:       @inset-size;
+		height:      @inset-size;
+		position:    absolute;
+		margin-left: (@circle-size - @inset-size)/2;
+		margin-top:  (@circle-size - @inset-size)/2;
+
+		background: @inset-background;
+		border-radius: 50%;
+		.percentage {
+			height:   @percentage-font-size + 2;
+			width:    @percentage-text-width;
+			overflow: hidden;
+
+			position: absolute;
+			top:      (@inset-size - @percentage-font-size) / 3.5;
+			left:     (@inset-size - @percentage-text-width) / 2;
+
+			.numbers {
+				margin-top: -@percentage-font-size;
+				transition: width @transition-length;
+				span {
+					width:          @percentage-text-width;
+					line-height:    1;
+					display:        inline-block;
+					vertical-align: top;
+
+					text-align:     center;
+					font-size:      @percentage-font-size;
+					color:          @percentage-color;
+				}
+			}
+		}
+		.complete{
+			font-size: 12px;
+			width:    @percentage-text-width;
+			position: absolute;
+			bottom: 12px;
+			text-align: center;
+		}
+	}
+
+	@i: 0;
+	@increment: 180deg / 100;
+	.loop (@i) when (@i <= 100) {
+		&[data-progress="@{i}"] {
+			.circle {
+				.mask.full, .fill {
+					-webkit-transform: rotate(@increment * @i);
+					-ms-transform: rotate(@increment * @i);
+					transform: rotate(@increment * @i);
+				}	
+				.fill.fix {
+					-webkit-transform: rotate(@increment * @i * 2);
+					-ms-transform: rotate(@increment * @i * 2);
+					transform: rotate(@increment * @i * 2);
+				}
+			}
+			.inset .percentage .numbers {
+				width: @i * @percentage-text-width + @percentage-text-width;
+			}
+		}
+		.loop(@i + 1);
+	}
+	.loop(@i);
+}
+
+
+
+.progress--big .radial-progress {
+	@circle-size: 115px;
+	@circle-background: #79C930;
+	@inset-size: 100px;
+	@inset-background: white;
+	@transition-length: 0.5s;
+	@percentage-color: #303030;
+	@percentage-font-size: 30px;
+	@percentage-text-width: 100px;
+	width:  @circle-size;
+	height: @circle-size;
+
+	border-radius: 50%;
+	.circle {
+		.mask, .fill {
+			width:    @circle-size;
+			height:   @circle-size;
+			position: absolute;
+
+			-webkit-backface-visibility: hidden;
+			transition: -webkit-transform @transition-length;
+			transition: -ms-transform @transition-length;
+			transition: transform @transition-length;
+			border-radius: 50%;
+		}
+		.mask {
+			clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+			.fill {
+				clip: rect(0px, @circle-size/2, @circle-size, 0px);
+				background: @circle-background;
+			}
+		}
+	}
+	.inset {
+		width:       @inset-size;
+		height:      @inset-size;
+		position:    absolute;
+		margin-left: (@circle-size - @inset-size)/2;
+		margin-top:  (@circle-size - @inset-size)/2;
+
+		background: @inset-background;
+		border-radius: 50%;
+		.percentage {
+			height:   @percentage-font-size + 2;
+			width:    @percentage-text-width;
+			overflow: hidden;
+
+			position: absolute;
+			top:      (@inset-size - @percentage-font-size) / 2.5;
+			left:     (@inset-size - @percentage-text-width) / 2;
+
+			.numbers {
+				margin-top: -@percentage-font-size;
+				transition: width @transition-length;
+				span {
+					width:          @percentage-text-width;
+					line-height:    1;
+					display:        inline-block;
+					vertical-align: top;
+
+					text-align:     center;
+					font-size:      @percentage-font-size;
+					color:          @percentage-color;
+				}
+			}
+		}
+		.complete{
+			font-size: 15px;
+			width:    @percentage-text-width;
+			position: absolute;
+			bottom: 15px;
+			text-align: center;
+		}
+	}
+
+	@i: 0;
+	@increment: 180deg / 100;
+	.loop (@i) when (@i <= 100) {
+		&[data-progress="@{i}"] {
+			.inset .percentage .numbers {
+				width: @i * @percentage-text-width + @percentage-text-width;
+			}
+		}
+		.loop(@i + 1);
+	}
+	.loop(@i);
+}

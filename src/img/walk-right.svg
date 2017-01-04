@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="13px" viewBox="0 0 21 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="20.1636697 2.22044605e-14 20.1636658 12.5 0 0"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20.1636697" height="12.5" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="category-walkthrough" transform="translate(-937.000000, -278.000000)" fill="#FFFFFF">
+            <g id="annotation">
+                <g id="Group-4-Copy-2" transform="translate(751.000000, 50.000000)">
+                    <g id="Group-5" transform="translate(186.000000, 228.000000)">
+                        <use id="Rectangle-20" stroke="#D5D9DB" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                        <polygon id="Rectangle-2" points="2 0 19.1500244 0 19.1500244 1 18.5 1 3.5 1"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

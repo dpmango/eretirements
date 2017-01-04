@@ -1,0 +1,205 @@
+{
+  "categories": [{
+    "title": "Family",
+    "questions": [{
+      "label": "Test slider",
+      "data-location": "demographic.populationEstimate",
+      "format": "single", 
+      "data-manipulation":{
+        "/": 12
+      },
+      "answers": [{
+          "label": "Very Low",
+          "criteria": {
+                "<=": 5
+                },
+          "points": 0.1}, {
+          "label": "Somewhat",
+           "criteria": {
+              "<=":10,
+              ">": 5
+            },
+           "points": 1
+          },{
+            "label": "High",
+            "points": 2
+          }]
+      }, {
+        "label": "Test checkbox",
+        "format": "images-checkbox",
+        "answers": [{
+            "label": "Golf",
+            "criteria": {
+                  "<=": 5
+                  },
+            "points": 0.1,
+            "img": "images-compressed/golf.png"
+            }, {
+            "label": "Yoga",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/yoga.png"
+            }, {
+            "label": "Pilates",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/pilates.png"
+            }, {
+            "label": "Tennis",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/tennis.png"
+            }, {
+            "label": "Bridge",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/bridge.png"
+            }
+          ]
+      },{
+        "label": "Regular chechbox",
+        "format": "regular-checkbox",
+        "answers": [{
+            "label": "Locals",
+            "criteria": {
+                  "<=": 5
+                  },
+            "points": 0.1
+            }, {
+            "label": "Transplants",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1
+            }, {
+            "label": "Mix",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1
+            }
+          ]
+      }
+    ]
+  },{
+    "title": "Culture"
+  }, {
+    "title": "Finances"
+  }, {
+    "title": "Weather",
+    "questions": [{
+      "label": "My tolerance for rain is",
+      "data-location": "demographic.populationEstimate",
+      "format": "single", 
+      "data-manipulation":{
+        "/": 12
+      },
+      "answers": [{
+          "label": "Very Low",
+          "criteria": {
+                "<=": 5
+                },
+          "points": 0.1}, {
+          "label": "Somewhat",
+           "criteria": {
+              "<=":10,
+              ">": 5
+            },
+           "points": 1
+          },{
+            "label": "High",
+            "points": 2
+          }]
+      }, {
+        "label": "Which hobbies are important to you?",
+        "format": "images-checkbox",
+        "answers": [{
+            "label": "Golf",
+            "criteria": {
+                  "<=": 5
+                  },
+            "points": 0.1,
+            "img": "images-compressed/golf.png"
+            }, {
+            "label": "Yoga",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/yoga.png"
+            }, {
+            "label": "Pilates",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/pilates.png"
+            }, {
+            "label": "Tennis",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/tennis.png"
+            }, {
+            "label": "Bridge",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1,
+             "img": "images-compressed/bridge.png"
+            }
+          ]
+      },{
+        "label": "Regular chechbox",
+        "format": "regular-checkbox",
+        "answers": [{
+            "label": "Locals",
+            "criteria": {
+                  "<=": 5
+                  },
+            "points": 0.1
+            }, {
+            "label": "Transplants",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1
+            }, {
+            "label": "Mix",
+             "criteria": {
+                "<=":10,
+                ">": 5
+              },
+             "points": 1
+            }
+          ]
+      }
+    ]
+  }, {
+    "title": "Activities"
+  }, {
+    "title": "Health"
+  }, {
+    "title": "Location"
+  }]
+}

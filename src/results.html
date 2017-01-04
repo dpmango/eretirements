@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FRONT-END WITH LOVE -.- SERGEY KHMELEVSKOY -.- -->
+	<!-- Follow BEM methodology and SMACSS to manage stylesheets -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>eRetirements </title>
+
+	<link rel="stylesheet" href="css/build.min.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="results-page">
+	<!-- HEADER: START-->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="header__navigation">
+						<a href="#">Help</a>
+						<a href="#">Contacts</a>
+					</div>
+				</div>
+				<div class="col-sm-6 center">
+					<div class="header__searchbar">
+						<form>
+							<div class="header__searchbar__submit">
+								<input type="submit" name="">
+							</div>
+							<input type="text" placeholder="Search for the best personalized places to retire…">
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div class="header__profile">
+						<a href="#">
+							<img src="images-compressed/profile_header.png" alt="" class="img-fluid img-rounded" />
+							<span class="header__profile__link">profile</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="#">
+						<img src="img/logo.png" alt="" class="header__logo img-fluid" />
+					</a>
+				</div>
+				<div class="col-sm-8 text-right">
+					<div class="header__navigation header__navigation--main">
+						<a href="#">Locations</a>
+						<a href="#">Self-assesment</a>
+						<a href="#">Quiz</a>
+						<a href="#">RetireWire</a>
+						<a href="#">Services</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8">
+					<button class="hamburger hamburger--collapse" type="button" id="show-me-menu">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<img src="img/logo.png" alt="" class="img-fluid header__logo-mobile" />
+				</div>
+				<div class="col-xs-4 text-right">
+					<div id="sb-search" class="sb-search">
+						<form class="mobile-header-search-form" id="demo-2">
+							<input type="search" placeholder="Search ...">
+						</form>
+					</div>
+					<div class="header__profile">
+						<a href="#">
+							<img src="images-compressed/profile_header.png" alt="" class="img-fluid img-rounded" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="mobile-nav">
+		<ul class="main-navi">
+			<li><a href="#">Locations</a></li>
+			<li><a href="#">Self-assesment</a></li>
+			<li><a href="#">Quiz</a></li>
+			<li><a href="#">RetireWire</a></li>
+			<li><a href="#">Services</a></li>
+			<hr />
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</section>
+	<!-- HEADER: END -->
+
+	<!-- HEADING: START -->
+	<section class="heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-md-6">
+					<div class="heading__title">Self - Assessment</div>
+					<div class="heading__subtitle">Thanks for taking the self - assessment, your results will automatically be saved to your profile. </div>
+				</div>
+				<div class="col-sm-7 col-md-6">
+					<a href="#" class="btn btn__blue btn__blue--medium fl--right mt35 hidden-xs-down">Download pdf <i class="ico ico-download"></i></a>
+					<div class="progress progress--heading progress--big fl--left--mobile fl--right">
+
+						<div class="radial-progress" data-progress="87">
+							<div class="circle">
+								<div class="mask full">
+									<div class="fill"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill"></div>
+									<div class="fill fix"></div>
+								</div>
+							</div>
+							<div class="inset">
+								<div class="percentage">
+									<div class="numbers"><span>-</span><span>0%</span><span>1%</span><span>2%</span><span>3%</span><span>4%</span><span>5%</span><span>6%</span><span>7%</span><span>8%</span><span>9%</span><span>10%</span><span>11%</span><span>12%</span><span>13%</span><span>14%</span><span>15%</span><span>16%</span><span>17%</span><span>18%</span><span>19%</span><span>20%</span><span>21%</span><span>22%</span><span>23%</span><span>24%</span><span>25%</span><span>26%</span><span>27%</span><span>28%</span><span>29%</span><span>30%</span><span>31%</span><span>32%</span><span>33%</span><span>34%</span><span>35%</span><span>36%</span><span>37%</span><span>38%</span><span>39%</span><span>40%</span><span>41%</span><span>42%</span><span>43%</span><span>44%</span><span>45%</span><span>46%</span><span>47%</span><span>48%</span><span>49%</span><span>50%</span><span>51%</span><span>52%</span><span>53%</span><span>54%</span><span>55%</span><span>56%</span><span>57%</span><span>58%</span><span>59%</span><span>60%</span><span>61%</span><span>62%</span><span>63%</span><span>64%</span><span>65%</span><span>66%</span><span>67%</span><span>68%</span><span>69%</span><span>70%</span><span>71%</span><span>72%</span><span>73%</span><span>74%</span><span>75%</span><span>76%</span><span>77%</span><span>78%</span><span>79%</span><span>80%</span><span>81%</span><span>82%</span><span>83%</span><span>84%</span><span>85%</span><span>86%</span><span>87%</span><span>88%</span><span>89%</span><span>90%</span><span>91%</span><span>92%</span><span>93%</span><span>94%</span><span>95%</span><span>96%</span><span>97%</span><span>98%</span><span>99%</span><span>100%</span></div>
+								</div>
+								<div class="complete">Complete</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn__blue btn__blue--medium fl--left--mobile fl--right hidden-sm-up mt10">Download pdf <i class="ico ico-download"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- HEADING: END -->
+
+	<!-- MAIN: START -->
+	<form>
+	<main class="category category--results" id="section-results">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-3">
+					<ul class="category__navigation">
+						<li><i class="ico ico-family"></i> <span>Family</span></li>
+						<li><i class="ico ico-culture"></i> <span>Culture</span></li>
+						<li><i class="ico ico-finances"></i> <span>Finances</span></li>
+						<li><i class="ico ico-climate"></i> <span>Climate</span></li>
+						<li><i class="ico ico-activities"></i> <span>Activities</span></li>
+						<li><i class="ico ico-health"></i> <span>Health</span></li>
+						<li><i class="ico ico-location"></i> <span>Location</span></li>
+					</ul>
+				</div>
+				<div class="col-sm-8 col-md-9">
+					<div class="category__title mt10">Combined Results for Sir Adam Jones</div>
+
+					<div class="category__results whitebox">
+						<div class="row">
+							<div class="col-sm-12 col-md-4">
+								<div class="category__results__title category__results__title--huge">
+									Top Cities<br> All Results
+								</div>
+								<div class="category__results__top-cities">
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">1</i><span>San Antonio, TX</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">2</i><span>Austin, TX</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">3</i><span>Tuscon, AZ</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">4</i><span>San Diego, CA</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">5</i><span>New Orleans</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">6</i><span>Nashville, TN</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">7</i><span>Chattanooga TN</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">8</i><span>Galvson, TX</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">9</i><span>Marfa TX</span>
+									</div>
+									<div class="category__results__top-cities__item">
+									<i class="ico ico-num">10</i><span>Eureka, CA</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-8 no-pad-l">
+								<div class="checkbox fl--right">
+									<input type="checkbox" name="" id="clear_res">
+									<label for="clear_res"><span>Clear all results</span></label>
+								</div>
+								<div class="category__results__map">
+									<img src="img/us-map.svg" alt="" class="img-fluid" />
+									<i class="ico ico-placemark" style="bottom: 30%; left: 20%"></i>
+									<i class="ico ico-placemark" style="bottom: 29%; left: 50%"></i>
+									<i class="ico ico-placemark" style="bottom: 50%; left: 30%"></i>
+									<i class="ico ico-placemark" style="bottom: 15%; left: 80%"></i>
+									<i class="ico ico-placemark" style="bottom: 25%; left: 70%"></i>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="category__results whitebox mt30">
+						<div class="center">
+							<div class="category__results__title">Top Matches Based On Your <br> all results from all filters</div>
+							<div class="row category__results__cities">
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap category__results__city__wrap--overlay">
+											<img src="images-compressed/result.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Phoenix, AZ</span>
+											<span class="category__results__city__match"><span>86%</span> match</span>
+										</a>
+										<div class="category__results__city__desc">
+											Arts, Diversity, Cuisine, Spiritual, Colleges, Music, Groups
+										</div>
+										<div class="category__results__city__more">
+											<a href="#">See more <i class="ico ico-next"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap">
+											<img src="images-compressed/result.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Phoenix, AZ</span>
+											<span class="category__results__city__match"><span>86%</span> match</span>
+										</a>
+										<div class="category__results__city__desc">
+											Arts, Diversity, Cuisine, Spiritual, Colleges, Music, Groups
+										</div>
+										<div class="category__results__city__more">
+											<a href="#">See more <i class="ico ico-next"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap">
+											<img src="images-compressed/result.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Phoenix, AZ</span>
+											<span class="category__results__city__match"><span>86%</span> match</span>
+										</a>
+										<div class="category__results__city__desc">
+											Arts, Diversity, Cuisine, Spiritual, Colleges, Music, Groups
+										</div>
+										<div class="category__results__city__more">
+											<a href="#">See more <i class="ico ico-next"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="category__highlight whitebox mt30">
+						<div class="category__highlight__wrapper">
+							<div class="category__results__title category__results__title--huge mt10">
+								Highlights
+							</div>
+							<div class="category__results__title">
+								Characteristics to Describe Your Results: 
+							</div>
+							<div class="row category__highlight__characteristics">
+								<div class="col-sm-4">
+									<div class="category__highlight__characteristics__item">
+										Independence
+									</div>
+									<div class="category__highlight__characteristics__item">
+										Learning
+									</div>
+								</div>
+								<div class="col-sm-4 text-center">
+									<div class="category__highlight__characteristics__item">
+										Low Impact
+									</div>
+									<div class="category__highlight__characteristics__item">
+										Health Minded
+									</div>
+								</div>
+								<div class="col-sm-4 text-right">
+									<div class="category__highlight__characteristics__item">
+										Quiet Places
+									</div>
+									<div class="category__highlight__characteristics__item">
+										Natural Beauty
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- next --> 
+						<div class="category__highlight__wrapper">
+							<div class="category__results__title">
+								Location Stats of All Results
+							</div>
+							<div class="row category__highlight__stats">
+								<div class="col-sm-6 col-md-4">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											Overall
+										</div>
+										<div class="category__highlight__stats__item--overall">
+											<div class="gray"></div>
+											<div class="blue"><span>143</span></div>
+										</div>
+										<div class="category__highlight__stats__helper"><b>143 cities</b><br>
+										match your preferences<br>
+										by 50% or more
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											Geographic Region
+										</div>
+										<div class="vertical-text small">Number of cities that match results</div>
+										<div class="category__highlight__stats__item--geo">
+											<div class="region-1">
+												<div class="wrap">
+													<div class="chart-table" style="height: 80px"></div>
+													<div class="vertical-text">South</div>
+												</div>
+											</div>
+											<div class="region-2">
+												<div class="wrap">
+													<div class="chart-table" style="height: 50px"></div>
+													<div class="vertical-text">East cost</div>
+												</div>
+											</div>
+											<div class="region-3">
+												<div class="wrap">
+													<div class="chart-table" style="height: 35px"></div>
+													<div class="vertical-text">Mid west</div>
+												</div>
+											</div>
+											<div class="region-4">
+												<div class="wrap">
+													<div class="chart-table top" style="height: 140px"></div>
+													<div class="vertical-text">South West</div>
+												</div>
+											</div>
+											<div class="region-5">
+												<div class="wrap">
+													<div class="chart-table" style="height: 120px"></div>
+													<div class="vertical-text">West cost</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 offset-sm-3 offset-md-0">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											Cost of Living
+										</div>
+										<div class="vertical-text small cost">Range of cities that match results</div>
+										<div class="category__highlight__stats__item--range">
+											<div class="label-text">
+												High
+											</div>
+											<div class="range">
+												<div class="range__main">
+												</div>
+												<div class="range__edge" style="top: 40px">
+													<div class=""><span>$80k</span></div>
+												</div>
+												<div class="range__mid" style="top: 45px; height: 55px">
+												</div>
+												<div class="range__edge" style="top: 100px">
+													<div class=""><span>$40k</span></div>
+												</div>
+
+											</div>
+											<div class="label-text">
+												Low
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- next --> 
+						<div class="category__highlight__wrapper">
+							<div class="category__results__title">
+								Population Stats of Top 3 Cities
+							</div>
+
+							<div class="row">
+								<div class="col-sm-6 col-md-4">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											By age
+										</div>
+										<div class="category__highlight__stats__item--city">
+											<div class="vertical-text small age">Percent of Pop. of 40+</div>
+											<div class="region-1">
+												<div class="wrap">
+													<div class="chart-table" style="height: 80px"></div>
+													<div class="vertical-text">Tuscon, AZ</div>
+												</div>
+											</div>
+											<div class="region-2">
+												<div class="wrap">
+													<div class="chart-table" style="height: 50px"></div>
+													<div class="vertical-text">San Antonio, TX</div>
+												</div>
+											</div>
+											<div class="region-3">
+												<div class="wrap">
+													<div class="chart-table" style="height: 35px"></div>
+													<div class="vertical-text">Austin, TX</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											By Income
+										</div>
+										<div class="category__highlight__stats__item--city">
+											<div class="vertical-text small income">Percent of Pop. with $50,000+</div>
+											<div class="region-1">
+												<div class="wrap">
+													<div class="chart-table" style="height: 60px"></div>
+													<div class="vertical-text">Tuscon, AZ</div>
+												</div>
+											</div>
+											<div class="region-2">
+												<div class="wrap">
+													<div class="chart-table" style="height: 100px"></div>
+													<div class="vertical-text">San Antonio, TX</div>
+												</div>
+											</div>
+											<div class="region-3">
+												<div class="wrap">
+													<div class="chart-table" style="height: 35px"></div>
+													<div class="vertical-text">Austin, TX</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 offset-sm-3 offset-md-0">
+									<div class="category__highlight__stats__item text-center">
+										<div class="category__results__title">
+											By Growth
+										</div>
+										<div class="category__highlight__stats__item--city">
+											<div class="vertical-text small growth">Percent of Pop. Increase</div>
+											<div class="region-1">
+												<div class="wrap">
+													<div class="chart-table" style="height: 20px"></div>
+													<div class="vertical-text">Tuscon, AZ</div>
+												</div>
+											</div>
+											<div class="region-2">
+												<div class="wrap">
+													<div class="chart-table" style="height: 45px"></div>
+													<div class="vertical-text">San Antonio, TX</div>
+												</div>
+											</div>
+											<div class="region-3">
+												<div class="wrap">
+													<div class="chart-table" style="height: 90px"></div>
+													<div class="vertical-text">Austin, TX</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- next --> 
+						<div class="category__highlight__wrapper">
+							<div class="category__results__title">
+								Quizzes to Help Define your Results Better
+							</div>
+							<div class="row category__results__cities">
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap category__results__city__wrap--overlay">
+											<img src="images-compressed/results-age.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Age + Population</span>
+										</a>
+										<div class="category__results__city__desc">
+											Taken by 1k<br>
+											of eRetirement users
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap category__results__city__wrap--overlay">
+											<img src="images-compressed/results-finance.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Financial Literacy</span>
+										</a>
+										<div class="category__results__city__desc">
+											Taken by 1k<br>
+											of eRetirement users
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap category__results__city__wrap--overlay">
+											<img src="images-compressed/results-social.png" alt="" class="img-fluid" />
+											<span class="category__results__city__name">Social Considerations</span>
+										</a>
+										<div class="category__results__city__desc">
+											Taken by 1k<br>
+											of eRetirement users
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- next --> 
+						<div class="category__highlight__wrapper">
+							<div class="category__results__title">
+								Current Listings That Have Similar Tags
+							</div>
+							<div class="row category__results__cities">
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap">
+											<img src="images-compressed/results-listing.png" alt="" class="img-fluid" />
+										</a>
+										<div class="category__results__listing__name">2 Bdrm Condo</div>
+										<div class="category__results__city__desc">
+											Hilltop Community<br>San Antonio, Tx<br>
+											<span class="price">$176,000</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap">
+											<img src="images-compressed/results-listing.png" alt="" class="img-fluid" />
+										</a>
+										<div class="category__results__listing__name">2 Bdrm Condo</div>
+										<div class="category__results__city__desc">
+											Hilltop Community<br>San Antonio, Tx<br>
+											<span class="price">$176,000</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4">
+									<div class="category__results__city">
+										<a href="#" class="category__results__city__wrap">
+											<img src="images-compressed/results-listing.png" alt="" class="img-fluid" />
+										</a>
+										<div class="category__results__listing__name">2 Bdrm Condo</div>
+										<div class="category__results__city__desc">
+											Hilltop Community<br>San Antonio, Tx<br>
+											<span class="price">$176,000</span>
+										</div>
+									</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</main>
+	</form>
+	<!-- MAIN: END -->
+
+	<!-- FOOTER: END -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-sm-6">
+					<a href=""><img src="img/logo-white.png" class="footer__logo img-fluid"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 footer__links">
+					<div class="footer__links__block">
+						<a href="#">Home</a>
+						<a href="#">About</a>
+					</div>
+					<div class="footer__links__block">
+						<a href="#">Profile</a>
+						<a href="#">Blog</a>
+					</div>
+					<div class="footer__links__block">
+						<a href="#">Relocation Quiz</a>
+						<a href="#">Self Assessment</a>
+					</div>
+					<div class="footer__links__block">
+						<a href="#">Help</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER: END -->
+
+	<script type="text/javascript" src="js/build/production.min.js"></script>
+
+</body>
+</html>
