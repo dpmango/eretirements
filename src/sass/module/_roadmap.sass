@@ -1,0 +1,139 @@
+
+// Navigation
+.dashboard__navigation
+  display: flex
+  justify-content: space-between
+  border-top: 1px solid $borderColor
+  a
+    color: #4D4D4D
+    font-size: 22px
+    line-height: 1
+    display: inline-block
+    position: relative
+    padding: 25px 0 15px 0
+    &::after
+      position: absolute
+      bottom: 0
+      left: 0
+      display: block
+      content: ' '
+      height: 4px
+      width: 100%
+      opacity: 0
+      transition: all .4s ease-in-out
+    &.active
+      color: $blue
+      font-weight: 500
+      &::after
+        background: $blue
+        opacity: 1
+    &:hover:not(.active)
+      &::after
+        opacity: 1
+        background: $borderColor
+
+
+.roadmap
+  //rewrites
+  .whitebox
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    padding-top: 35px
+  .progress
+    // position: absolute
+    // left: 50%
+    // transform: translateX(-50%)
+    margin: 25px 0px 20px 50px
+    // temp
+
+  .dashboard__block__heading
+    padding-left: 40px
+
+
+
+  // left part
+  &__map
+    padding: 0
+
+    &__control
+      .ico
+        width: 22px
+        height: 20px
+        vertical-align: middle
+        margin-right: 15px
+      a
+        display: block
+        padding: 10px 20px 10px 40px
+        font-size: 16px
+        font-weight: 500
+        transition: background .3s ease-in-out
+        .fl--right
+          color: rgba($fontColor, .7)
+        &:hover
+          background: rgba($borderColor, .3)
+
+  &__questions
+    padding-right: 40px
+    padding-bottom: 50px
+
+    &__head
+      font-size: 12px
+      color: rgba($fontColor, .7)
+      background: rgba($borderColor, .3)
+      padding: 8px 20px
+      border-bottom: 1px solid $borderColor
+      margin-top: 25px
+      &:first-child
+        margin-top: 0
+      span
+        font-size: 14px
+        color: $fontColor
+        font-weight: 500
+
+    &__checkboxes
+      .category__questions__item__checkboxes__item
+        padding: 10px 20px 3px 10px
+        border-bottom: 1px solid $borderColor
+        width: 100%
+        label
+          font-weight: 400
+        &:hover
+          label
+            color: $fontColor
+        &.active
+          background: $blue
+          color: white
+          border-color: transparent
+          &:hover
+            label
+              color: white
+        &.compleated
+
+        &:last-child
+          border-bottom: none
+
+    // info on roadmap item
+    &__info
+      background: white
+      padding: 20px
+      overflow: hidden
+      display: none
+      border-bottom: 1px solid $borderColor
+      &__title
+        font-weight: 500
+        margin-bottom: 10px
+
+      &__content
+        p
+          font-size: 12px
+          line-height: 1.3em
+      &__compleate
+        display: inline-block
+        border-bottom: 1px dashed $fontColor
+        margin-top: 8px
+        font-weight: 500
+        font-size: 14px
+        transition: all .4s ease
+        &:hover
+          color: $blue
+          border-color: $blue

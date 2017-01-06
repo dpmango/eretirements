@@ -1,47 +1,47 @@
 .btn__blue
-	background: $blue
-	color: white
-	outline: none
-	border: none
-	@include border-rounded()
-	@include transition()
-	display: inline-block
-	&:hover, &:focus
-		opacity: .85
-		color: white
-	&:visited
-		text-decoration: none
+  background: $blue
+  color: white
+  outline: none
+  border: none
+  @include border-rounded()
+  @include transition()
+  display: inline-block
+  &:hover, &:focus
+    opacity: .85
+    color: white
+  &:visited
+    text-decoration: none
 
 .btn__blue--small
-	font-size: 14px
-	line-height: 16px
-	padding: 6px 40px
-	text-align: center
+  font-size: 14px
+  line-height: 16px
+  padding: 6px 40px
+  text-align: center
 
 .btn__blue--medium
-	font-size: 16px
-	font-weight: 500
-	padding: 10px 30px
+  font-size: 16px
+  font-weight: 500
+  padding: 10px 30px
 
 .btn__blue--huge
-	font-size: 18px
-	padding: 10px 70px
-	@include border-radius(40px)
-	@include mq($until: desktop)
-		font-size: 16px
-		padding: 7px 40px
-	@include mq($until: mobile)
-		font-size: 14px
-	span
-		font-size: 22px
-		font-weight: 500
-		display: block
-		@include mq($until: bp860)
-			font-size: 20px
-		@include mq($until: desktop)
-			font-size: 18px
-		@include mq($until: mobile)
-			font-size: 16px
+  font-size: 18px
+  padding: 10px 70px
+  @include border-radius(40px)
+  @include mq($until: desktop)
+    font-size: 16px
+    padding: 7px 40px
+  @include mq($until: mobile)
+    font-size: 14px
+  span
+    font-size: 22px
+    font-weight: 500
+    display: block
+    @include mq($until: bp860)
+      font-size: 20px
+    @include mq($until: desktop)
+      font-size: 18px
+    @include mq($until: mobile)
+      font-size: 16px
 
 .btn__blue--nav
   padding: 8px 15px
@@ -54,3 +54,35 @@
   &:hover
     background: $blue
     color: white
+
+.btn__blue:hover
+  .ico-btn-back
+    background-image: url('../img/ico-btn-back-white.svg')
+
+// BTN ICONS
+.ico-btn-back
+  background: url('../img/ico-btn-back.svg') no-repeat center
+  width: 13px
+  height: 10px
+  vertical-align: middle
+  margin-right: 10px
+  transition: all .4s ease
+
+.btn__red
+  background: $red
+  color: white
+  outline: none
+  border: none
+  @include transition()
+  display: inline-block
+  &--huge
+    padding: 10px 30px
+    font-weight: 500
+    border: 2px solid transparent
+    &:hover
+      color: $red
+      background: transparent
+      border-color: $red
+      box-shadow: 0 2px 4px rgba(black, .3)
+  &--rounded
+    @include border-rounded()

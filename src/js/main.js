@@ -139,7 +139,44 @@ $(document).ready(function(){
         var el = $(this).attr('href');
         $('body').animate({
             scrollTop: $(el).offset().top}, 1000);
-        return false; 
+        return false;
 	});
+
+  ////////////////
+  // ROADMAP PAGE
+  ////////////////
+
+  $('.roadmap__questions__checkboxes .category__questions__item__checkboxes__item').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    var target = $(this).data('id');
+    $('.roadmap__questions__info').each(function () {
+      if ( $(this).data('id') == target ){
+        $(this).fadeToggle();
+      }
+    });
+  });
+
+  $('.roadmap__questions__info__compleate').on('click', function(e){
+    var target = $(this).data('id');
+    var doAction = true
+    if ( $(this).text() == 'Not compleated' ){
+      doAction = false
+      $(this).text('Mark as compleated');
+    } else {
+      doAction = true
+      $(this).text('Not compleated');
+    }
+    $('.roadmap__questions__checkboxes .category__questions__item__checkboxes__item').each(function () {
+      if ( $(this).data('id') == target ) {
+        $(this).find('input[type=checkbox]').prop('checked', doAction);
+      }
+    });
+  });
+  // $('.roadmap__questions__checkboxes .category__questions__item__checkboxes__item label').click(function(e){
+  //   //set checkbox on active item
+  //   console.log('fired');
+  // });
+
 
 });

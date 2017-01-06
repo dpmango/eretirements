@@ -1,0 +1,285 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Dashboard
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.roadmap
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a.active(href="#") Journey Checklist
+              a(href="#") Assessment Results
+              a(href="#") Favorite Cities
+              a(href="#") My Notes
+        .row
+          .col-sm-12
+            .whitebox
+              .row.flex.flex--align-start
+                .roadmap__left.no-pad-r.br-r
+                  .roadmap__map
+                    .dashboard__block__heading
+                      i.ico.ico-heading-roadmap
+                      span My checklist
+
+                    .progress.progress--heading.progress--big
+                      .radial-progress(data-progress='56')
+                        .circle
+                          .mask.full
+                            .fill
+                          .mask.half
+                            .fill
+                            .fill.fix
+                        .inset
+                          .percentage
+                            .numbers
+                              span -
+                              span 0%
+                              span 1%
+                              span 2%
+                              span 3%
+                              span 4%
+                              span 5%
+                              span 6%
+                              span 7%
+                              span 8%
+                              span 9%
+                              span 10%
+                              span 11%
+                              span 12%
+                              span 13%
+                              span 14%
+                              span 15%
+                              span 16%
+                              span 17%
+                              span 18%
+                              span 19%
+                              span 20%
+                              span 21%
+                              span 22%
+                              span 23%
+                              span 24%
+                              span 25%
+                              span 26%
+                              span 27%
+                              span 28%
+                              span 29%
+                              span 30%
+                              span 31%
+                              span 32%
+                              span 33%
+                              span 34%
+                              span 35%
+                              span 36%
+                              span 37%
+                              span 38%
+                              span 39%
+                              span 40%
+                              span 41%
+                              span 42%
+                              span 43%
+                              span 44%
+                              span 45%
+                              span 46%
+                              span 47%
+                              span 48%
+                              span 49%
+                              span 50%
+                              span 51%
+                              span 52%
+                              span 53%
+                              span 54%
+                              span 55%
+                              span 56%
+                              span 57%
+                              span 58%
+                              span 59%
+                              span 60%
+                              span 61%
+                              span 62%
+                              span 63%
+                              span 64%
+                              span 65%
+                              span 66%
+                              span 67%
+                              span 68%
+                              span 69%
+                              span 70%
+                              span 71%
+                              span 72%
+                              span 73%
+                              span 74%
+                              span 75%
+                              span 76%
+                              span 77%
+                              span 78%
+                              span 79%
+                              span 80%
+                              span 81%
+                              span 82%
+                              span 83%
+                              span 84%
+                              span 85%
+                              span 86%
+                              span 87%
+                              span 88%
+                              span 89%
+                              span 90%
+                              span 91%
+                              span 92%
+                              span 93%
+                              span 94%
+                              span 95%
+                              span 96%
+                              span 97%
+                              span 98%
+                              span 99%
+                              span 100%
+                          .complete Complete
+
+                    .roadmap__map__control
+                      a(href="#")
+                        i.ico.ico-roadmap-map-remaining
+                        span Remaining to-dos
+                        .fl--right 55
+                      a(href="#")
+                        i.ico.ico-roadmap-map-compleated
+                        span Compleated
+                        .fl--right 40
+                      a(href="#")
+                        i.ico.ico-roadmap-map-important
+                        span Most important
+                        .fl--right 17
+                .roadmap__right
+                  .roadmap__questions
+                    .roadmap__questions__head <span> November:</span> Get initial results and talk with spouse / partner
+                    .category__questions__item__checkboxes.roadmap__questions__checkboxes
+                      .category__questions__item__checkboxes__item
+                        input(type='checkbox', name='checkbox', id='checkbox1')
+                        label(for='checkbox1')
+                          span Learn why this is an right process
+                      // item
+                      .category__questions__item__checkboxes__item(data-id="2")
+                        input(type='checkbox', name='checkbox', id='checkbox2')
+                        label(for='checkbox2')
+                          span Take personal Assesment
+                      .roadmap__questions__info(data-id="2")
+                        .roadmap__questions__info__title Why it does matter ?
+                        .roadmap__questions__info__content
+                          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .center
+                          a.btn.btn__red.btn__red--huge.btn__red--rounded(href="#") Take self-assesment now
+                          .fl--right
+                            a.roadmap__questions__info__compleate(href="#" data-id="2") Mark as compleated
+                      // item
+                      .category__questions__item__checkboxes__item
+                        input(type='checkbox', name='checkbox', id='checkbox3')
+                        label(for='checkbox3')
+                          span Understand retirement journey process
+                      // item
+                      .category__questions__item__checkboxes__item
+                        input(type='checkbox', name='checkbox', id='checkbox4')
+                        label(for='checkbox4')
+                          span Read about other’s journeys
+                      // item
+                      .category__questions__item__checkboxes__item
+                        input(type='checkbox', name='checkbox', id='checkbox5')
+                        label(for='checkbox5')
+                          span Read about your retirement vision
+                      // item
+                      .category__questions__item__checkboxes__item(data-id="6")
+                        input(type='checkbox', name='checkbox', id='checkbox6')
+                        label(for='checkbox6')
+                          span Spouse/partner takes personal assessment
+                      .roadmap__questions__info(data-id="6")
+                        .roadmap__questions__info__title Invite your spouse/partner or frieds to compare results
+                        .roadmap__questions__info__content
+                          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                        form.dashboard__invite-form(action="")
+                          input.input__regular(placeholder="Your friend’s email address")
+                          a.dashboard__invite-form__add#addMoreFields(href="#")
+                            i.ico.ico-form-add
+                            span send more invitations
+                          .center
+                            a.btn.btn__red.btn__red--huge.btn__red--rounded(href="#" type="confirm") Send invitation
+                            .fl--right
+                              a.roadmap__questions__info__compleate(href="#" data-id="6") Mark as compleated
+                      // item
+                      .category__questions__item__checkboxes__item
+                        input(type='checkbox', name='checkbox', id='checkbox7')
+                        label(for='checkbox7')
+                          span Compare report with spouse/partner
+                      // NEXT MONTH
+                      .roadmap__questions__head <span> December:</span> Make adjustments with partner and learn about city details
+                      .category__questions__item__checkboxes.roadmap__questions__checkboxes
+                        .category__questions__item__checkboxes__item
+                          input(type='checkbox', name='checkbox', id='checkbox1')
+                          label(for='checkbox1')
+                            span Learn why this is an right process
+                        // item
+                        .category__questions__item__checkboxes__item(data-id="2")
+                          input(type='checkbox', name='checkbox', id='checkbox2')
+                          label(for='checkbox2')
+                            span Take personal Assesment
+                        .roadmap__questions__info(data-id="2")
+                          .roadmap__questions__info__title Why it does matter ?
+                          .roadmap__questions__info__content
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          .center
+                            a.btn.btn__red.btn__red--huge.btn__red--rounded(href="#") Take self-assesment now
+                        // item
+                        .category__questions__item__checkboxes__item
+                          input(type='checkbox', name='checkbox', id='checkbox3')
+                          label(for='checkbox3')
+                            span Understand retirement journey process
+                        // item
+                        .category__questions__item__checkboxes__item
+                          input(type='checkbox', name='checkbox', id='checkbox4')
+                          label(for='checkbox4')
+                            span Read about other’s journeys
+                        // item
+                        .category__questions__item__checkboxes__item
+                          input(type='checkbox', name='checkbox', id='checkbox5')
+                          label(for='checkbox5')
+                            span Read about your retirement vision
+                        // item
+                        .category__questions__item__checkboxes__item(data-id="6")
+                          input(type='checkbox', name='checkbox', id='checkbox6')
+                          label(for='checkbox6')
+                            span Spouse/partner takes personal assessment
+                        .roadmap__questions__info(data-id="6")
+                          .roadmap__questions__info__title Invite your spouse/partner or frieds to compare results
+                          .roadmap__questions__info__content
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                          form.dashboard__invite-form(action="")
+                            input.input__regular(placeholder="Your friend’s email address")
+                            a.dashboard__invite-form__add#addMoreFields(href="#")
+                              i.ico.ico-form-add
+                              span send more invitations
+                            .center
+                              a.btn.btn__red.btn__red--huge.btn__red--rounded(href="#" type="confirm") Send invitation
+                        // item
+                        .category__questions__item__checkboxes__item
+                          input(type='checkbox', name='checkbox', id='checkbox7')
+                          label(for='checkbox7')
+                            span Compare report with spouse/partner
+
+
+
+
+
+    include shared/footer.pug
