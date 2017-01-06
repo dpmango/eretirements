@@ -10,6 +10,18 @@
       margin: 15px auto 15px auto
   &--cities
     padding: 15px 25px 15px 35px
+  &--favorite-cities
+    padding: 20px 40px
+    .dashboard__block__heading
+      margin-bottom: 20px
+  &--notes
+    padding: 20px 40px
+  &--compare
+    padding: 20px 40px
+
+  &--blogs
+    padding: 20px 40px
+
 
 .dashboard
   &__user-avatar
@@ -130,3 +142,129 @@
         background-position: center
         background-repeat: no-repeat
         margin-bottom: 3px
+
+  // Favorite cities
+  &__favorite-city
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    padding: 10px 0
+    border-bottom: 1px solid $borderColor
+    &__name
+      display: inline-block
+      font-size: 18px
+      font-weight: 700
+
+    &__match
+      display: inline-block
+      background: $red
+      font-size: 12px
+      line-height: 1em
+      height: 20px
+      font-weight: 700
+      border-radius: 6px
+      color: white
+      padding: 5px 10px
+
+    &__controls
+      a:last-child .ico
+        margin-right: 0px
+      .ico
+        width: 21px
+        height: 14px
+        background-repeat: no-repeat
+        background-position: center
+        vertical-align: middle
+        margin-right: 20px
+        transition: margin-bottom .3s ease-in-out
+        &:hover
+          margin-bottom: -5px
+
+  &__notes
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: baseline
+  &__note-compact
+    display: block
+    margin-top: 25px
+    text-align: center
+    border-radius: 5px
+    box-shadow: 0 2px 6px rgba(black, .2)
+    padding: 10px 5px
+    flex: 1 1 28%
+    transition: box-shadow .3s ease
+    margin-right: 5%
+    .ico
+      transition: background .4s ease-in-out
+    &:hover
+      box-shadow: 0 2px 10px rgba(black, .4)
+      .ico
+        background-image: url('../img/dash-note-blue.svg')
+
+    &__name
+      font-size: 16px
+      font-weight: 500
+      margin-top: 5px
+      line-height: 1.2em
+
+  &__compare
+    &__heading
+      font-size: 24px
+      font-weight: 500
+      line-height: 1.2em
+      margin-top: 100px
+      margin-bottom: 15px
+
+  &__invite-form
+    margin-top: 15px
+    &__add
+      display: block
+      font-size: 12px
+      color: rgba($fontColor, .7)
+
+  // Saved blog posts
+  &__blog
+    display: block
+    position: relative
+    border-radius: 6px
+    overflow: hidden
+    transition: box-shadow .3s ease-in-out
+    &--dark-bg
+      &:after
+        display: block
+        content: ' '
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: 1
+        background: rgba($blue, .5)
+
+    &:hover
+      box-shadow: 0 2px 6px rgba(black, .4)
+    &__name
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 100%
+      z-index: 2
+      display: inline-block
+      text-align: center
+      transform: translate(-50%, -50%)
+      font-size: 15px
+      font-weight: 700
+      color: white
+      text-shadow: 0 0 3px rgba(black, .65)
+    &__match
+      position: absolute
+      bottom: 0
+      right: 0
+      z-index: 2
+      background: $red
+      border-top-left-radius: 6px
+      color: white
+      font-size: 12px
+      line-height: 1
+      padding: 5px 10px

@@ -18,6 +18,27 @@
   margin-right: 15px;
   vertical-align: middle; }
 
+.ico-dashboard-heading-favorite-cities {
+  background: url("../img/dash-heading-favorite-cities.svg");
+  width: 22px;
+  height: 21px;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.ico-dashboard-heading-notes {
+  background: url("../img/dash-heading-notes.svg");
+  width: 27px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.ico-dashboard-heading-compare {
+  background: url("../img/dash-heading-compare.svg");
+  width: 27px;
+  height: 13px;
+  vertical-align: middle;
+  margin-right: 15px; }
+
 .ico-dash-city-eye {
   background: url("../img/dash-city-controll-eye.svg");
   width: 21px;
@@ -53,5 +74,30 @@
 
 .ico-dash-city-region {
   background-image: url("../img/dash-city-region.svg"); }
+
+.ico-dash-fav-city-edit {
+  background-image: url("../img/dash-fav-city-edit.svg"); }
+
+.ico-dash-fav-city-eye {
+  background-image: url("../img/dash-fav-city-eye.svg"); }
+
+.ico-dash-fav-city-community {
+  background-image: url("../img/dash-fav-city-community.svg"); }
+
+.ico-dash-fav-city-info {
+  background-image: url("../img/dash-fav-city-info.svg"); }
+
+.ico-dash-note-gray {
+  background: url("../img/dash-note-gray.svg");
+  width: 37px;
+  height: 45px;
+  vertical-align: middle; }
+
+.ico-form-add {
+  background: url("../img/ico-form-add.svg");
+  width: 20px;
+  height: 20px;
+  vertical-align: -5px;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=icons.css.map */
