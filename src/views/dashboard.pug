@@ -5,5 +5,383 @@ html
 body
   include shared/header.pug
 
-  
+  // HEADING:: START
+  section.heading.heading--dashboard
+    .container
+      .row
+        .col-sm-7
+          .heading__title Eddie’s Dashboard
+
+  // DASHBOARD:: START
+  section.dashboard
+    .container
+      .row.flex
+        .col-sm-4.whitebox
+          .dashboard__block.dashboard__block--user.center
+            .dashboard__user-avatar
+              img.img-fluid(src="/images/dash_avatar.png")
+            .dashboard__user-name Sergey Khmelevskoy
+            .dashboard__user-since Member since 09 Dec 2016
+            a.dashboard__user-settings(href="#")
+              i.ico.ico-dashboard-user-settings
+              span Profile settings
+        .col-sm-8.whitebox
+          .dashboard__block.dashboard__block--progress
+            .dashboard__block__heading
+              i.ico.ico-dashboard-progress
+              span My retirement progress
+              .fl--right
+                a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#") Journey checklist
+            .row.mt20
+              .col-sm-4.br-r
+                .progress.progress--heading.progress--big
+                  .radial-progress(data-progress='75')
+                    .circle
+                      .mask.full
+                        .fill
+                      .mask.half
+                        .fill
+                        .fill.fix
+                    .inset
+                      .percentage
+                        .numbers
+                          span -
+                          span 0%
+                          span 1%
+                          span 2%
+                          span 3%
+                          span 4%
+                          span 5%
+                          span 6%
+                          span 7%
+                          span 8%
+                          span 9%
+                          span 10%
+                          span 11%
+                          span 12%
+                          span 13%
+                          span 14%
+                          span 15%
+                          span 16%
+                          span 17%
+                          span 18%
+                          span 19%
+                          span 20%
+                          span 21%
+                          span 22%
+                          span 23%
+                          span 24%
+                          span 25%
+                          span 26%
+                          span 27%
+                          span 28%
+                          span 29%
+                          span 30%
+                          span 31%
+                          span 32%
+                          span 33%
+                          span 34%
+                          span 35%
+                          span 36%
+                          span 37%
+                          span 38%
+                          span 39%
+                          span 40%
+                          span 41%
+                          span 42%
+                          span 43%
+                          span 44%
+                          span 45%
+                          span 46%
+                          span 47%
+                          span 48%
+                          span 49%
+                          span 50%
+                          span 51%
+                          span 52%
+                          span 53%
+                          span 54%
+                          span 55%
+                          span 56%
+                          span 57%
+                          span 58%
+                          span 59%
+                          span 60%
+                          span 61%
+                          span 62%
+                          span 63%
+                          span 64%
+                          span 65%
+                          span 66%
+                          span 67%
+                          span 68%
+                          span 69%
+                          span 70%
+                          span 71%
+                          span 72%
+                          span 73%
+                          span 74%
+                          span 75%
+                          span 76%
+                          span 77%
+                          span 78%
+                          span 79%
+                          span 80%
+                          span 81%
+                          span 82%
+                          span 83%
+                          span 84%
+                          span 85%
+                          span 86%
+                          span 87%
+                          span 88%
+                          span 89%
+                          span 90%
+                          span 91%
+                          span 92%
+                          span 93%
+                          span 94%
+                          span 95%
+                          span 96%
+                          span 97%
+                          span 98%
+                          span 99%
+                          span 100%
+                      .complete Complete
+                .dashboard__progress-left 42/55 to-dos done
+              .col-sm-8
+                .category__questions__item__checkboxes.dashboard__progress__checkboxes
+                  .category__questions__item__checkboxes__item
+                    input(type='checkbox', name='checbox', id='checkbox1')
+                    label(for='checkbox1')
+                      span Take personal Assesment
+                  .category__questions__item__checkboxes__item
+                    input(type='checkbox', name='checbox', id='checkbox2')
+                    label(for='checkbox2')
+                      span Understand retirement journey process
+                  .category__questions__item__checkboxes__item
+                    input(type='checkbox', name='checbox', id='checkbox3')
+                    label(for='checkbox3')
+                      span Read about other’s journeys
+
+      .row.flex.mt30
+        .col-sm-4.whitebox
+          .dashboard__block.dashboard__block--self-asessment
+            .dashboard__block__heading.center
+              span Self-assesment
+            .radial-progress(data-progress='50')
+              .circle
+                .mask.full
+                  .fill
+                .mask.half
+                  .fill
+                  .fill.fix
+              .inset
+                .percentage
+                  .numbers
+                    span -
+                    span 0%
+                    span 1%
+                    span 2%
+                    span 3%
+                    span 4%
+                    span 5%
+                    span 6%
+                    span 7%
+                    span 8%
+                    span 9%
+                    span 10%
+                    span 11%
+                    span 12%
+                    span 13%
+                    span 14%
+                    span 15%
+                    span 16%
+                    span 17%
+                    span 18%
+                    span 19%
+                    span 20%
+                    span 21%
+                    span 22%
+                    span 23%
+                    span 24%
+                    span 25%
+                    span 26%
+                    span 27%
+                    span 28%
+                    span 29%
+                    span 30%
+                    span 31%
+                    span 32%
+                    span 33%
+                    span 34%
+                    span 35%
+                    span 36%
+                    span 37%
+                    span 38%
+                    span 39%
+                    span 40%
+                    span 41%
+                    span 42%
+                    span 43%
+                    span 44%
+                    span 45%
+                    span 46%
+                    span 47%
+                    span 48%
+                    span 49%
+                    span 50%
+                    span 51%
+                    span 52%
+                    span 53%
+                    span 54%
+                    span 55%
+                    span 56%
+                    span 57%
+                    span 58%
+                    span 59%
+                    span 60%
+                    span 61%
+                    span 62%
+                    span 63%
+                    span 64%
+                    span 65%
+                    span 66%
+                    span 67%
+                    span 68%
+                    span 69%
+                    span 70%
+                    span 71%
+                    span 72%
+                    span 73%
+                    span 74%
+                    span 75%
+                    span 76%
+                    span 77%
+                    span 78%
+                    span 79%
+                    span 80%
+                    span 81%
+                    span 82%
+                    span 83%
+                    span 84%
+                    span 85%
+                    span 86%
+                    span 87%
+                    span 88%
+                    span 89%
+                    span 90%
+                    span 91%
+                    span 92%
+                    span 93%
+                    span 94%
+                    span 95%
+                    span 96%
+                    span 97%
+                    span 98%
+                    span 99%
+                    span 100%
+                .complete Complete
+
+            .dashboard__self-asessment__icons
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-family
+                span Family
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-culture
+                span Culture
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-finances
+                span Finances
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-climate
+                span Climate
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-activities
+                span Activities
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-health
+                span Gealth
+                .fl--right 1/7
+              .dashboard__self-asessment__icons__row
+                i.ico.ico-location
+                span Location
+                .fl--right 1/7
+
+            .center
+              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline.mt10(href="#") Continue asessment
+
+        .col-sm-8.whitebox
+          .dashboard__block.dashboard__block--cities
+            .dashboard__block__heading
+              i.ico.ico-dashboard-heading-cities
+              span Top Cities Based on Eddie’s Assessment
+              .fl--right
+                a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#") Assesment results
+            .row.mt20
+              .col-sm-6.big-pad-r.br-r
+                .dashboard__city
+                  .row.flex
+                    .col-sm-11.no-pad-r
+                      .dashboard__city__image
+                        img.img-fluid(src="/images/dash_city.png")
+                        .dashboard__city__image__name Naples, FL
+                        .dashboard__city__image__match <span>86%</span> Match
+                        .dashboard__city__image__controls
+                          a(href="#")
+                            i.ico.ico-dash-city-eye
+                          a(href="#")
+                            i.ico.ico-dash-city-community
+                          a(href="#")
+                            i.ico.ico-dash-city-info
+                    .col-sm-1
+                      .dashboard__city__metrics
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Population: 75,322')
+                          i.ico.ico-dash-city-population
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Avarage age: 62')
+                          i.ico.ico-dash-city-age
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Avarage income: 78,614')
+                          i.ico.ico-dash-city-income
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Closest big city: Cape Coral')
+                          i.ico.ico-dash-city-big-city
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Population growth rate: +7,8%')
+                          i.ico.ico-dash-city-growth
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Region: Collier')
+                          i.ico.ico-dash-city-region
+
+              .col-sm-6.big-pad-l
+                .dashboard__city
+                  .row.flex
+                    .col-sm-11.no-pad-r
+                      .dashboard__city__image
+                        img.img-fluid(src="/images/dash_city.png")
+                        .dashboard__city__image__name Naples, FL
+                        .dashboard__city__image__match <span>86%</span> Match
+                        .dashboard__city__image__controls
+                          a(href="#")
+                            i.ico.ico-dash-city-eye
+                          a(href="#")
+                            i.ico.ico-dash-city-community
+                          a(href="#")
+                            i.ico.ico-dash-city-info
+                    .col-sm-1
+                      .dashboard__city__metrics
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Population: 75,322')
+                          i.ico.ico-dash-city-population
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Avarage age: 62')
+                          i.ico.ico-dash-city-age
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Avarage income: 78,614')
+                          i.ico.ico-dash-city-income
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Closest big city: Cape Coral')
+                          i.ico.ico-dash-city-big-city
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Population growth rate: +7,8%')
+                          i.ico.ico-dash-city-growth
+                        .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='left' title='Region: Collier')
+                          i.ico.ico-dash-city-region
+
   include shared/footer.pug

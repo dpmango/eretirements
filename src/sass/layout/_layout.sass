@@ -25,9 +25,13 @@
 .text-right
 	text-align: right
 
+.centrify
+  margin-left: auto
+  margin-right: auto
+
 .pt5
   padding-top: 5px
-  
+
 .mt10
 	margin-top: 10px
 .mt20
@@ -37,10 +41,22 @@
 .mt35
 	margin-top: 35px
 
+.br-r
+  border-right: 1px solid $borderColor
+
 .no-pad-l
 	padding-left: 0
 	@include mq($until: mobile)
 		padding-left: 15px
+.no-pad-r
+  padding-right: 0
+
+.big-pad-r
+  padding-right: 30px
+
+.big-pad-l
+  padding-left: 30px
+
 .img-fluid
 	max-width: 100%
 	height:auto
@@ -84,6 +100,8 @@
 	margin-top: 60px
 	@include mq($until: mobile)
 		margin-top: 35px
+.heading--dashboard
+  margin-top: 40px
 
 .category
 	margin-top: 40px
@@ -97,3 +115,20 @@
 	background: white
 	@include border()
 	@include border-radius(4px)
+
+// Dashboard
+.dashboard
+  margin-top: 30px
+
+
+// Flexbox
+.flex
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-items: stretch
+  @include mq($until: mobile)
+    flex-direction: column
+  .whitebox
+    margin-left: 15px
+    margin-right: 15px
