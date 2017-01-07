@@ -22,7 +22,7 @@ body
               img.img-fluid(src="/images/dash_avatar.png")
             .dashboard__user-name Sergey Khmelevskoy
             .dashboard__user-since Member since 09 Dec 2016
-            a.dashboard__user-settings(href="#")
+            a.dashboard__user-settings(href="profile-settings.html")
               i.ico.ico-dashboard-user-settings
               span Profile settings
         .col-sm-8.whitebox
@@ -315,7 +315,7 @@ body
                 .fl--right 1/7
 
             .center
-              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline.mt10(href="#") Continue asessment
+              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline.mt10(href="quiz.html") Continue asessment
 
         .col-sm-8.whitebox
           .dashboard__block.dashboard__block--cities
@@ -323,7 +323,7 @@ body
               i.ico.ico-dashboard-heading-cities
               span Top Cities Based on Eddie’s Assessment
               .fl--right
-                a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#") Assesment results
+                a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="results.html") Assesment results
             .row.mt30
               .col-sm-6.big-pad-r.br-r
                 .dashboard__city
@@ -506,7 +506,7 @@ body
                   i.ico.ico-dash-fav-city-info(data-toggle='tooltip' data-placement='top' title='City report')
 
             .center.mt25
-              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#") Assesment results
+              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dash-favorites.html") All favorite cities
 
         .col-sm-6.whitebox
           .dashboard__block.dashboard__block--notes
@@ -534,7 +534,7 @@ body
                 .dashboard__note-compact__name New Orleans
 
             .center.mt25
-              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="#") See all notes
+              a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dash-notes.html") See all notes
 
       // Compare and blogposts
       .row.flex.mt30
@@ -547,7 +547,8 @@ body
             .dashboard__compare
               .dashboard__compare__heading Invite your spouse/partner or frieds to compare results
               form.dashboard__invite-form(action="")
-                input.input__regular(placeholder="Your friend’s email address")
+                .dashboard__invite-form__inputs
+                  input.input__regular(placeholder="Your friend’s email address")
                 a.dashboard__invite-form__add#addMoreFields(href="#")
                   i.ico.ico-form-add
                   span send more invitations

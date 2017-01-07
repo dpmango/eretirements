@@ -1,0 +1,54 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Profile Settings
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dashboard.html")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.profile-settings
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a(href="profile-settings.html") Personal Info
+              a.active(href="profile-settings-avatar.html") Profile Picture
+              a(href="profile-settings-email.html") Email Preferences
+        .row
+          .col-sm-12
+            .whitebox.profile-settings__wrapper
+              .profile-settings__heading
+                span Profile picture
+              .prefile-settings__subheading
+                span Update your profile pciture
+
+              .profile-settings__change-avatar
+
+                .dashboard__user-avatar
+                  img.img-fluid(src="/images/dash_avatar.png")
+                .input-group
+                  label Select new profile picture
+                  input.inputFile(type="file" name="avatar" id="avatar")
+                  label.input__regular.input__regular--block.input__file(for="avatar") Choice new profile picture
+                  .small Maximum 2Mb file. Allowed types: jpg, jpeg, png
+                  a.profile-settings__change-avatar__delete(href="")
+                    i.ico.ico-delete
+                    span Delete
+
+
+              .center.mt40
+                a.btn.btn__blue.btn__blue--medium(href="#") SAVE CHANGES
+
+
+    include shared/footer.pug

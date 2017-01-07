@@ -97,13 +97,15 @@
         width: 100%
         label
           font-weight: 400
+        input:checked + label:before
+          background: url('../img/checkbox-checked-green.svg') no-repeat center
         &:hover
           label
             color: $fontColor
         &.active
           background: $blue
           color: white
-          border-color: transparent
+          border-color: white
 
           &:hover
             label

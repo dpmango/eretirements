@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>eRetirements</title>
     <!--build:js js/main.min.js-->
-    <script src="/js/libs/jquery.min.js"></script>
-    <script src="/js/libs/tether.min.js"></script>
-    <script src="/js/libs/bootstrap.min.js"></script>
-    <script src="/js/libs/handlebars.min.js"></script>
-    <script src="/js/libs/jquery-ui.min.js"></script>
-    <script src="/js/libs/jquery.hc-sticky.min.js"></script>
-    <script src="/js/libs/jquery.magnific-popup.min.js"></script>
-    <!-- script(src="/js/handlebars-logic-main.js")-->
-    <script src="/js/main.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/tether.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/handlebars.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/libs/jquery.hc-sticky.min.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+    <!-- script(src="js/handlebars-logic-main.js")-->
+    <script src="js/main.js"></script>
     <!--endbuild-->
     <!--build:css css/style.min.css--><link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css" type="text/css" />
 <link rel="stylesheet" href="css/libs/tether.min.css" type="text/css" />
@@ -101,7 +101,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="dashboard__navigation"><a class="active" href="roadmap.html">Journey Checklist</a><a href="dash-results.html">Assessment Results</a><a href="dash-favorites.html">Favorite Cities</a><a href="#">My Notes</a></div>
+            <div class="dashboard__navigation"><a class="active" href="roadmap.html">Journey Checklist</a><a href="dash-results.html">Assessment Results</a><a href="dash-favorites.html">Favorite Cities</a><a href="dash-notes.html">My Notes</a></div>
           </div>
         </div>
         <div class="row">
@@ -184,7 +184,9 @@
                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>
                         </div>
                         <form class="dashboard__invite-form" action="">
-                          <input class="input__regular" placeholder="Your friend’s email address"><a class="dashboard__invite-form__add" id="addMoreFields" href="#"><i class="ico ico-form-add"></i><span>send more invitations</span></a>
+                          <div class="dashboard__invite-form__inputs">
+                            <input class="input__regular" placeholder="Your friend’s email address">
+                          </div><a class="dashboard__invite-form__add" id="addMoreFields" href="#"><i class="ico ico-form-add"></i><span>send more invitations</span></a>
                           <div class="center"><a class="btn btn__red btn__red--huge btn__red--rounded" href="#" type="confirm">Send invitation</a>
                             <div class="fl--right"><a class="roadmap__questions__info__compleate" href="#" data-id="6">Mark as compleated</a></div>
                           </div>

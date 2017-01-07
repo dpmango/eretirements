@@ -1,0 +1,39 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Dashboard
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dashboard.html")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.dash-fav-cities
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a(href="roadmap.html") Journey Checklist
+              a(href="dash-results.html") Assessment Results
+              a(href="dash-favorites.html") Favorite Cities
+              a.active(href="dash-notes.html") My Notes
+        .row
+          .col-sm-12
+            .whitebox.dash-fav-cities__wrapper
+              .dashboard__block__heading
+                span Eddie’s Notes
+
+                .fl--right
+                  a.btn.btn__blue--nav.btn__blue--medium.btn__blue(href="#") View Your Top Cities Report
+
+
+    include shared/footer.pug

@@ -173,6 +173,17 @@ $(document).ready(function(){
       }
     });
   });
+
+  var friendsCounter = 0
+  $('#addMoreFields').on('click', function(){
+    var str = "<input class='input__regular' placeholder='Your friend’s email address'></input>";
+    if (friendsCounter < 9) {
+      $('.dashboard__invite-form__inputs').append(str);
+    } else{
+      $('.dashboard__invite-form__inputs').append("<div style='color: tomato; font-size: 10px'>maximum 10 invites per time</div>");
+    }
+    friendsCounter ++
+  });
   // $('.roadmap__questions__checkboxes .category__questions__item__checkboxes__item label').click(function(e){
   //   //set checkbox on active item
   //   console.log('fired');
@@ -190,6 +201,37 @@ $(document).ready(function(){
         $(this).toggleClass('active');
       }
     });
+  });
+
+  ////////////////
+  // FORMS UI
+  ////////////////
+
+  $('.select__custom select').on('change', function(){
+    var currentVal = $(this).val();
+    $(this).parent().find('span').text(currentVal);
+  });
+
+  var inputs = document.querySelectorAll( '.inputFile' );
+
+  Array.prototype.forEach.call( inputs, function( input )
+  {
+  	var label	 = input.nextElementSibling,
+  		labelVal = label.innerHTML;
+
+  	input.addEventListener( 'change', function( e )
+  	{
+  		var fileName = '';
+  		if( this.files && this.files.length > 1 )
+  			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+  		else
+  			fileName = e.target.value.split( '\\' ).pop();
+
+  		if( fileName )
+  			label.innerHTML = fileName;
+  		else
+  			label.innerHTML = labelVal;
+  	});
   });
 
 });

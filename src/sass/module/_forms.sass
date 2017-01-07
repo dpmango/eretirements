@@ -1,4 +1,20 @@
 // Forms UI
+
+.input-group
+  label
+    font-size: 14px
+    font-weight: 500
+    margin-bottom: 5px
+    display: inline-block
+
+.radio__input__group
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &--two-items
+    .radio__custom
+      flex: 1 1 40%
+
 .input__regular
   display: inline-block
   line-height: 1.25em
@@ -9,3 +25,78 @@
   margin-bottom: 10px
   &:focus
     border-color: $blue
+  &--block
+    display: block
+    width: 100%
+
+.input__file
+  background: url('../img/input-file.svg') no-repeat 10px center
+  padding-left: 40px
+  color: rgba($fontColor, .7)
+.inputFile
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+  & + label
+    display: inline-block
+    cursor: pointer
+    transition: all .3s ease
+  &:focus + label, & + label:hover
+    box-shadow: 0 2px 4px rgba(black, .3)
+
+.select__custom
+  display: inline-block
+  position: relative
+  line-height: 1.25em
+  border-radius: 4px
+  padding: 8px 20px
+  background: white url('../img/select-caret.svg') no-repeat 90% center
+  border: 1px solid $borderColor
+  outline: none
+  margin-bottom: 10px
+  cursor: pointer
+  transition: box-shadow .2s ease
+  select
+    cursor: pointer
+    opacity: 0
+    height: 34px
+    -webkit-appearance: menulist-button
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  &--block
+    display: block
+    width: 100%
+  &--wide
+    background-position: 95% center
+  &:hover
+    box-shadow: 0 2px 4px rgba(black, .2)
+
+
+.radio__custom
+  position: relative
+  display: inline-block
+  cursor: pointer
+  input
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    &:checked + label
+      background: $blue
+      color: white
+  label
+    display: inline-block
+    border: 1px solid $borderColor
+    border-radius: 4px
+    padding: 7px 20px
+    cursor: pointer
+    transition: background .3s ease
+  &:hover
+    label
+      background: rgba($blue, .2)

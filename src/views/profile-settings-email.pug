@@ -1,0 +1,60 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Profile Settings
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dashboard.html")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.profile-settings
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a(href="profile-settings.html") Personal Info
+              a(href="profile-settings-avatar.html") Profile Picture
+              a.active(href="profile-settings-email.html") Email Preferences
+        .row
+          .col-sm-12
+            .whitebox.profile-settings__wrapper
+              .profile-settings__heading
+                span My email preferences
+              .prefile-settings__subheading
+                span Set your email preferences below.
+
+              .row.mt25
+                .col-sm-8.offset-sm-2
+                  .category__questions__item__checkboxes.dashboard__progress__checkboxes
+                    .category__questions__item__checkboxes__item
+                      input(type='checkbox', name='email_pref', id='email_pref1')
+                      label(for='email_pref1')
+                        span Please subscribe me to the eRetirements newsletter
+                    .category__questions__item__checkboxes__item
+                      input(type='checkbox', name='email_pref', id='email_pref2' checked)
+                      label(for='email_pref2')
+                        span Please let me know when new cities are added
+                    .category__questions__item__checkboxes__item
+                      input(type='checkbox', name='email_pref', id='email_pref3')
+                      label(for='email_pref3')
+                        span Inform me of new products and services that may be of interest to me
+                    .category__questions__item__checkboxes__item
+                      input(type='checkbox', name='email_pref', id='email_pref4' checked)
+                      label(for='email_pref4')
+                        span I would not like to receive any communication at this time
+
+              .center.mt40
+                a.btn.btn__blue.btn__blue--medium(href="#") UPDATE PREFERENCES
+
+
+    include shared/footer.pug

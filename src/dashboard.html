@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>eRetirements</title>
     <!--build:js js/main.min.js-->
-    <script src="/js/libs/jquery.min.js"></script>
-    <script src="/js/libs/tether.min.js"></script>
-    <script src="/js/libs/bootstrap.min.js"></script>
-    <script src="/js/libs/handlebars.min.js"></script>
-    <script src="/js/libs/jquery-ui.min.js"></script>
-    <script src="/js/libs/jquery.hc-sticky.min.js"></script>
-    <script src="/js/libs/jquery.magnific-popup.min.js"></script>
-    <!-- script(src="/js/handlebars-logic-main.js")-->
-    <script src="/js/main.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/tether.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/handlebars.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/libs/jquery.hc-sticky.min.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+    <!-- script(src="js/handlebars-logic-main.js")-->
+    <script src="js/main.js"></script>
     <!--endbuild-->
     <!--build:css css/style.min.css--><link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css" type="text/css" />
 <link rel="stylesheet" href="css/libs/tether.min.css" type="text/css" />
@@ -104,7 +104,7 @@
           <div class="dashboard__block dashboard__block--user center">
             <div class="dashboard__user-avatar"><img class="img-fluid" src="/images/dash_avatar.png"></div>
             <div class="dashboard__user-name">Sergey Khmelevskoy</div>
-            <div class="dashboard__user-since">Member since 09 Dec 2016</div><a class="dashboard__user-settings" href="#"><i class="ico ico-dashboard-user-settings"></i><span>Profile settings</span></a>
+            <div class="dashboard__user-since">Member since 09 Dec 2016</div><a class="dashboard__user-settings" href="profile-settings.html"><i class="ico ico-dashboard-user-settings"></i><span>Profile settings</span></a>
           </div>
         </div>
         <div class="col-sm-8 whitebox">
@@ -200,13 +200,13 @@
                 <div class="fl--right">1/7</div>
               </div>
             </div>
-            <div class="center"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline mt10" href="#">Continue asessment</a></div>
+            <div class="center"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline mt10" href="quiz.html">Continue asessment</a></div>
           </div>
         </div>
         <div class="col-sm-8 whitebox">
           <div class="dashboard__block dashboard__block--cities">
             <div class="dashboard__block__heading"><i class="ico ico-dashboard-heading-cities"></i><span>Top Cities Based on Eddie’s Assessment</span>
-              <div class="fl--right"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="#">Assesment results</a></div>
+              <div class="fl--right"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="results.html">Assesment results</a></div>
             </div>
             <div class="row mt30">
               <div class="col-sm-6 big-pad-r br-r">
@@ -336,7 +336,7 @@
               <div class="dashboard__favorite-city__match">86%</div>
               <div class="dashboard__favorite-city__controls"><a href="#"><i class="ico ico-dash-fav-city-edit" data-toggle="tooltip" data-placement="top" title="Edit"></i></a><a href="#"><i class="ico ico-dash-fav-city-eye" data-toggle="tooltip" data-placement="top" title="More info"></i></a><a href="#"><i class="ico ico-dash-fav-city-community" data-toggle="tooltip" data-placement="top" title="Community"></i></a><a href="#"><i class="ico ico-dash-fav-city-info" data-toggle="tooltip" data-placement="top" title="City report"></i></a></div>
             </div>
-            <div class="center mt25"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="#">Assesment results</a></div>
+            <div class="center mt25"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="dash-favorites.html">All favorite cities</a></div>
           </div>
         </div>
         <div class="col-sm-6 whitebox">
@@ -349,7 +349,7 @@
                 <div class="dashboard__note-compact__name">Las Vegas</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
                 <div class="dashboard__note-compact__name">Los Angeles</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
                 <div class="dashboard__note-compact__name">New Orleans</div></a></div>
-            <div class="center mt25"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="#">See all notes</a></div>
+            <div class="center mt25"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="dash-notes.html">See all notes</a></div>
           </div>
         </div>
       </div>
@@ -361,7 +361,9 @@
             <div class="dashboard__compare">
               <div class="dashboard__compare__heading">Invite your spouse/partner or frieds to compare results</div>
               <form class="dashboard__invite-form" action="">
-                <input class="input__regular" placeholder="Your friend’s email address"><a class="dashboard__invite-form__add" id="addMoreFields" href="#"><i class="ico ico-form-add"></i><span>send more invitations</span></a>
+                <div class="dashboard__invite-form__inputs">
+                  <input class="input__regular" placeholder="Your friend’s email address">
+                </div><a class="dashboard__invite-form__add" id="addMoreFields" href="#"><i class="ico ico-form-add"></i><span>send more invitations</span></a>
                 <div class="center mt60"><a class="btn btn__blue btn__blue--small btn__blue--nav btn__blue--outline" href="#">Send invitation</a></div>
               </form>
             </div>

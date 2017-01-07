@@ -157,6 +157,9 @@ b {
 .mt35 {
   margin-top: 35px; }
 
+.mt40 {
+  margin-top: 40px; }
+
 .mt60 {
   margin-top: 60px; }
 
@@ -261,6 +264,9 @@ b {
     margin-right: 15px; }
 
 .dash-results {
+  margin-top: 30px; }
+
+.profile-settings {
   margin-top: 30px; }
 
 .flex {
@@ -1815,6 +1821,43 @@ b {
     background-image: url("../img/ico-note-edit-white.svg");
     background-color: #FF757C; }
 
+.ico-password {
+  background: url("../img/ico-password.svg") no-repeat center;
+  width: 15px;
+  height: 23px;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.ico-delete {
+  background: url("../img/ico-delete.svg") no-repeat center;
+  width: 10px;
+  height: 13px;
+  margin-right: 10px; }
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: inline-block; }
+
+.radio__input__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .radio__input__group--two-items .radio__custom {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%; }
+
 .input__regular {
   display: inline-block;
   line-height: 1.25em;
@@ -1825,6 +1868,87 @@ b {
   margin-bottom: 10px; }
   .input__regular:focus {
     border-color: #196CA7; }
+  .input__regular--block {
+    display: block;
+    width: 100%; }
+
+.input__file {
+  background: url("../img/input-file.svg") no-repeat 10px center;
+  padding-left: 40px;
+  color: rgba(48, 48, 48, 0.7); }
+
+.inputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+  .inputFile + label {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+  .inputFile:focus + label, .inputFile + label:hover {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.select__custom {
+  display: inline-block;
+  position: relative;
+  line-height: 1.25em;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background: white url("../img/select-caret.svg") no-repeat 90% center;
+  border: 1px solid #D5D9DB;
+  outline: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease; }
+  .select__custom select {
+    cursor: pointer;
+    opacity: 0;
+    height: 34px;
+    -webkit-appearance: menulist-button;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  .select__custom--block {
+    display: block;
+    width: 100%; }
+  .select__custom--wide {
+    background-position: 95% center; }
+  .select__custom:hover {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.radio__custom {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .radio__custom input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .radio__custom input:checked + label {
+      background: #196CA7;
+      color: white; }
+  .radio__custom label {
+    display: inline-block;
+    border: 1px solid #D5D9DB;
+    border-radius: 4px;
+    padding: 7px 20px;
+    cursor: pointer;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; }
+  .radio__custom:hover label {
+    background: rgba(25, 108, 167, 0.2); }
 
 .tooltip {
   position: absolute;
@@ -2134,6 +2258,8 @@ b {
   .dashboard__progress__checkboxes .category__questions__item__checkboxes__item label {
     font-size: 14px;
     font-weight: 400; }
+  .dashboard__progress__checkboxes .category__questions__item__checkboxes__item input:checked + label:before {
+    background: url("../img/checkbox-checked-green.svg") no-repeat center; }
   .dashboard__progress__checkboxes .category__questions__item__checkboxes__item:last-child {
     border-bottom: none; }
 
@@ -2719,12 +2845,14 @@ b {
     width: 100%; }
     .roadmap__questions__checkboxes .category__questions__item__checkboxes__item label {
       font-weight: 400; }
+    .roadmap__questions__checkboxes .category__questions__item__checkboxes__item input:checked + label:before {
+      background: url("../img/checkbox-checked-green.svg") no-repeat center; }
     .roadmap__questions__checkboxes .category__questions__item__checkboxes__item:hover label {
       color: #303030; }
     .roadmap__questions__checkboxes .category__questions__item__checkboxes__item.active {
       background: #196CA7;
       color: white;
-      border-color: transparent; }
+      border-color: white; }
       .roadmap__questions__checkboxes .category__questions__item__checkboxes__item.active:hover label {
         color: white; }
     .roadmap__questions__checkboxes .category__questions__item__checkboxes__item:last-child {
@@ -2752,5 +2880,57 @@ b {
       .roadmap__questions__info__compleate:hover {
         color: #196CA7;
         border-color: #196CA7; }
+
+.profile-settings__wrapper {
+  padding: 25px 45px 50px 45px; }
+
+.profile-settings__heading {
+  font-size: 22px;
+  font-weight: 500; }
+
+.profile-settings__subheading {
+  font-size: 13px;
+  margin-top: 5px;
+  color: rgba(48, 48, 48, 0.7); }
+
+.profile-settings__password {
+  display: inline-block;
+  color: #196CA7; }
+  .profile-settings__password:hover {
+    color: #196CA7;
+    opacity: .7; }
+  .profile-settings__password span {
+    display: inline-block;
+    border-bottom: 1px dashed #196CA7; }
+
+.profile-settings__info {
+  background: rgba(213, 217, 219, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 7px 20px; }
+
+.profile-settings__change-avatar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px; }
+  .profile-settings__change-avatar__delete {
+    color: #FF757C;
+    opacity: .5;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+    .profile-settings__change-avatar__delete:hover {
+      opacity: 1;
+      color: #FF757C; }
+  .profile-settings__change-avatar .input-group {
+    margin-left: 35px; }
+    .profile-settings__change-avatar .input-group .small {
+      opacity: .5;
+      font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@ html
               a.active(href="roadmap.html") Journey Checklist
               a(href="dash-results.html") Assessment Results
               a(href="dash-favorites.html") Favorite Cities
-              a(href="#") My Notes
+              a(href="dash-notes.html") My Notes
         .row
           .col-sm-12
             .whitebox
@@ -210,7 +210,8 @@ html
                         .roadmap__questions__info__content
                           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                         form.dashboard__invite-form(action="")
-                          input.input__regular(placeholder="Your friend’s email address")
+                          .dashboard__invite-form__inputs
+                            input.input__regular(placeholder="Your friend’s email address")
                           a.dashboard__invite-form__add#addMoreFields(href="#")
                             i.ico.ico-form-add
                             span send more invitations

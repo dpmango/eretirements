@@ -1,0 +1,172 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Profile Settings
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dashboard.html")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.profile-settings
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a.active(href="profile-settings.html") Personal Info
+              a(href="profile-settings-avatar.html") Profile Picture
+              a(href="profile-settings-email.html") Email Preferences
+        .row
+          .col-sm-12
+            .whitebox.profile-settings__wrapper
+              .profile-settings__heading
+                span My personal info
+              .prefile-settings__subheading
+                span Update your personal information on eRetirements
+
+              .row.mt25
+                .col-sm-6
+                  span Email:
+                    b eddie.tao@gmail.com
+                .col-sm-6
+                  a(href='#').profile-settings__password
+                    i.ico.ico-password
+                    span Change password
+
+              .row.mt25
+                .col-sm-12
+                  .profile-settings__info Filling out the following inofmation will assist us in tailoring eRetirements to your specific preferences
+
+              .row.mt25
+                .col-sm-6
+                  .row
+                    .col-sm-6
+                      .input-group
+                        label Name
+                        input.input__regular.input__regular--block(type="text" placeholder="Your name")
+                    .col-sm-6
+                      .input-group
+                        label Last name
+                        input.input__regular.input__regular--block(type="text" placeholder="Last name")
+                  .input-group
+                    label Zip code
+                    input.input__regular.input__regular--block(type="text" placeholder="Zip code")
+
+                  .row
+                    .col-sm-6
+                      .input-group
+                        label Age
+                        .select__custom.select__custom--block
+                          span -- Select age --
+                          select
+                            option -- Select age --
+                            option 25-30
+                            option 30-40
+                    .col-sm-6
+                      .input-group
+                        label Gender
+                        .radio__input__group.radio__input__group--two-items
+                          .radio__custom
+                            input(type="radio" name="gender" id="gender_male" checked)
+                            label(for="gender_male") Male
+                          .radio__custom
+                            input(type="radio" name="gender" id="gender_female")
+                            label(for="gender_female") Female
+                  .input-group
+                    label Marital status
+                    .select__custom.select__custom--block.select__custom--wide
+                      span -- Select Marital status --
+                      select
+                        option -- Select Marital status --
+                        option Some
+                        option Thing
+
+                  .input-group
+                    label How did you heard about us?
+                    .select__custom.select__custom--block.select__custom--wide
+                      span -- Select where you heard about us --
+                      select
+                        option -- Select where you heard about us --
+                        option Some
+                        option Thing
+
+
+                .col-sm-6
+                  .input-group
+                    label Employment status
+                    .select__custom.select__custom--block.select__custom--wide
+                      span -- Select Employment status --
+                      select
+                        option -- Select Employment status --
+                        option Some
+                        option Thing
+                  .input-group
+                    label Annual income
+                    .select__custom.select__custom--block.select__custom--wide
+                      span -- Select Annual income --
+                      select
+                        option -- Select Employment status --
+                        option Some
+                        option Thing
+                  .input-group
+                    label Target retirement status
+                    .select__custom.select__custom--block.select__custom--wide
+                      span -- Select Target retirement status --
+                      select
+                        option -- Select Target retirement status --
+                        option Some
+                        option Thing
+                  .row
+                    .col-sm-6
+                      .input-group
+                        label Current real estate
+                        .select__custom.select__custom--block
+                          span -- Home tenure --
+                          select
+                            option -- Home tenure --
+                            option Some
+                            option Thing
+                    .col-sm-6
+                      .input-group
+                        label .
+                        .select__custom.select__custom--block
+                          span -- Home type --
+                          select
+                            option --  Home type --
+                            option Some
+                            option Thing
+
+                  .row
+                    .col-sm-6
+                      .input-group
+                        label Relocation real estate
+                        .select__custom.select__custom--block
+                          span -- Home tenure --
+                          select
+                            option -- Home tenure --
+                            option Some
+                            option Thing
+                    .col-sm-6
+                      .input-group
+                        label .
+                        .select__custom.select__custom--block
+                          span -- Home type --
+                          select
+                            option --  Home type --
+                            option Some
+                            option Thing
+
+              .center.mt40
+                a.btn.btn__blue.btn__blue--medium(href="#") SAVE CHANGES
+
+
+    include shared/footer.pug

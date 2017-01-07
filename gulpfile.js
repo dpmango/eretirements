@@ -38,7 +38,7 @@ gulp.task('build', function (callback) {
     'clean:dist',
     'pug',
     'sass',
-    ['useref', 'fonts'],
+    ['useref', 'img', 'images', 'fonts'],
     callback
   )
 })
@@ -93,6 +93,13 @@ gulp.task('images', function(){
       interlaced: true
     })))
   .pipe(gulp.dest('dist/images'))
+});
+gulp.task('img', function(){
+  return gulp.src('./src/img/**/*.+(png|jpg|gif|svg)')
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task('fonts', function() {

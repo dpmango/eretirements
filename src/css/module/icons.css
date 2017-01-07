@@ -156,4 +156,17 @@
     background-image: url("../img/ico-note-edit-white.svg");
     background-color: #FF757C; }
 
+.ico-password {
+  background: url("../img/ico-password.svg") no-repeat center;
+  width: 15px;
+  height: 23px;
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.ico-delete {
+  background: url("../img/ico-delete.svg") no-repeat center;
+  width: 10px;
+  height: 13px;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=icons.css.map */
