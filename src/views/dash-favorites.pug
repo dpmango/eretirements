@@ -1,0 +1,265 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // HEADING:: START
+    section.heading.heading--dashboard
+      .container
+        .row
+          .col-sm-7
+            .heading__title Eddie’s Dashboard
+          .col-sm-5.text-right
+            a.btn.btn__blue.btn__blue--small.btn__blue--nav.btn__blue--outline(href="dashboard.html")
+              i.ico.ico-btn-back
+              span My Dashboard
+
+    // ROADMAP:: START
+    section.dash-fav-cities
+      .container
+        .row
+          .col-sm-12
+            .dashboard__navigation
+              a(href="roadmap.html") Journey Checklist
+              a(href="dash-results.html") Assessment Results
+              a.active(href="dash-favorites.html") Favorite Cities
+              a(href="#") My Notes
+        .row
+          .col-sm-12
+            .whitebox.dash-fav-cities__wrapper
+              .dashboard__block__heading
+                span Eddie’s Favorite Cities
+                .dashboard__block__heading__tip
+                  i.ico.ico-dash-heading-tip
+                  span Tip: Drag and drop below cities <br> to prioritize them!
+
+                .fl--right
+                  a.btn.btn__blue--nav.btn__blue--medium.btn__blue(href="#") View Your Top Cities Report
+
+              .dashboard__favorite-city(data-id="1")
+                .dashboard__favorite-city__number 1
+                .dashboard__favorite-city__name Naples, FL
+                .dashboard__favorite-city__match 86% <span>Match</span>
+                .dashboard__favorite-city__controls
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span More info
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span Community
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span City report
+                    i.ico.ico-btn-next
+
+              // next item
+              .dashboard__favorite-city(data-id="2")
+                .dashboard__favorite-city__number 2
+                .dashboard__favorite-city__name Naples, FL
+                .dashboard__favorite-city__match 86% <span>Match</span>
+                .dashboard__favorite-city__controls
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span More info
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span Community
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span City report
+                    i.ico.ico-btn-next
+
+              .dashboard__favorite-city__content(data-id="2")
+                .dashboard__city__metrics
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population: 75,322')
+                    i.ico.ico-dash-city-population
+                    span 75,322
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage age: 62')
+                    i.ico.ico-dash-city-age
+                    span 62
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage income: 78,614')
+                    i.ico.ico-dash-city-income
+                    span 78,614
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Closest big city: Cape Coral')
+                    i.ico.ico-dash-city-big-city
+                    span Cape Coral
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population growth rate: +7,8%')
+                    i.ico.ico-dash-city-growth
+                    span +7,8%
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Region: Collier')
+                    i.ico.ico-dash-city-region
+                    span Collier
+
+                ul.dash-results__city__desc
+                  li
+                    span World class Gulf of Mexico beaches
+                  li
+                    span Tax friendly
+                  li
+                    span Friendly communities
+                  li
+                    span City amenities combined with a relaxed pace of life
+
+                a.dashboard__city-note(href="#")
+                  i.ico.ico-dash-note-bg
+                  i.ico.ico-dash-note-body
+                  i.ico.ico-dash-note-add
+                  span Add notes
+
+              // next City
+              .dashboard__favorite-city(data-id="3")
+                .dashboard__favorite-city__number 3
+                .dashboard__favorite-city__name Naples, FL
+                .dashboard__favorite-city__match 86% <span>Match</span>
+                .dashboard__favorite-city__controls
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span More info
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span Community
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span City report
+                    i.ico.ico-btn-next
+              .dashboard__favorite-city__content(data-id="3")
+                .dashboard__city__metrics
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population: 75,322')
+                    i.ico.ico-dash-city-population
+                    span 75,322
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage age: 62')
+                    i.ico.ico-dash-city-age
+                    span 62
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage income: 78,614')
+                    i.ico.ico-dash-city-income
+                    span 78,614
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Closest big city: Cape Coral')
+                    i.ico.ico-dash-city-big-city
+                    span Cape Coral
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population growth rate: +7,8%')
+                    i.ico.ico-dash-city-growth
+                    span +7,8%
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Region: Collier')
+                    i.ico.ico-dash-city-region
+                    span Collier
+
+                ul.dash-results__city__desc
+                  li
+                    span World class Gulf of Mexico beaches
+                  li
+                    span Tax friendly
+                  li
+                    span Friendly communities
+                  li
+                    span City amenities combined with a relaxed pace of life
+
+                a.dashboard__city-note(href="#")
+                  i.ico.ico-dash-note-bg
+                  i.ico.ico-dash-note-body
+                  i.ico.ico-dash-note-add
+                  span Add notes
+
+              // next City
+              .dashboard__favorite-city(data-id="4")
+                .dashboard__favorite-city__number 4
+                .dashboard__favorite-city__name Naples, FL
+                .dashboard__favorite-city__match 86% <span>Match</span>
+                .dashboard__favorite-city__controls
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span More info
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span Community
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span City report
+                    i.ico.ico-btn-next
+              .dashboard__favorite-city__content(data-id="4")
+                .dashboard__city__metrics
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population: 75,322')
+                    i.ico.ico-dash-city-population
+                    span 75,322
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage age: 62')
+                    i.ico.ico-dash-city-age
+                    span 62
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage income: 78,614')
+                    i.ico.ico-dash-city-income
+                    span 78,614
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Closest big city: Cape Coral')
+                    i.ico.ico-dash-city-big-city
+                    span Cape Coral
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population growth rate: +7,8%')
+                    i.ico.ico-dash-city-growth
+                    span +7,8%
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Region: Collier')
+                    i.ico.ico-dash-city-region
+                    span Collier
+
+                ul.dash-results__city__desc
+                  li
+                    span World class Gulf of Mexico beaches
+                  li
+                    span Tax friendly
+                  li
+                    span Friendly communities
+                  li
+                    span City amenities combined with a relaxed pace of life
+
+                a.dashboard__city-note(href="#")
+                  i.ico.ico-dash-note-bg
+                  i.ico.ico-dash-note-body
+                  i.ico.ico-dash-note-add
+                  span Add notes
+
+              // next City
+              .dashboard__favorite-city(data-id="5")
+                .dashboard__favorite-city__number 5
+                .dashboard__favorite-city__name Editable city
+                .dashboard__favorite-city__match 86% <span>Match</span>
+                .dashboard__favorite-city__controls
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span More info
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span Community
+                    i.ico.ico-btn-next
+                  a.btn.btn__blue.btn__blue--nav.btn__blue--small.btn__blue--outline(href="#")
+                    span City report
+                    i.ico.ico-btn-next
+              .dashboard__favorite-city__content(data-id="5")
+                .dashboard__city__metrics
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population: 75,322')
+                    i.ico.ico-dash-city-population
+                    span 75,322
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage age: 62')
+                    i.ico.ico-dash-city-age
+                    span 62
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Avarage income: 78,614')
+                    i.ico.ico-dash-city-income
+                    span 78,614
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Closest big city: Cape Coral')
+                    i.ico.ico-dash-city-big-city
+                    span Cape Coral
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Population growth rate: +7,8%')
+                    i.ico.ico-dash-city-growth
+                    span +7,8%
+                  .dashboard__city__metrics__item(data-toggle='tooltip' data-placement='right' title='Region: Collier')
+                    i.ico.ico-dash-city-region
+                    span Collier
+
+                ul.dash-results__city__desc
+                  li
+                    span World class Gulf of Mexico beaches
+                  li
+                    span Tax friendly
+                  li
+                    span Friendly communities
+                  li
+                    span City amenities combined with a relaxed pace of life
+
+                a.dashboard__city-note(href="#")
+                  i.ico.ico-dash-note-bg
+                  i.ico.ico-dash-note-body
+                  i.ico.ico-dash-note-add.editable
+                  span Edit notes
+
+    include shared/footer.pug

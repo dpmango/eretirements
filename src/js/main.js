@@ -178,5 +178,18 @@ $(document).ready(function(){
   //   console.log('fired');
   // });
 
+  ////////////////
+  // FAVORITE CITIES PAGE
+  ////////////////
+  $('.dash-fav-cities .dashboard__favorite-city').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    var target = $(this).data('id');
+    $('.dashboard__favorite-city__content').each(function () {
+      if ( $(this).data('id') == target ){
+        $(this).toggleClass('active');
+      }
+    });
+  });
 
 });

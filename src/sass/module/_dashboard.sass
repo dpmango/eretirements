@@ -46,9 +46,27 @@
     &__heading
       font-size: 18px
       font-weight: 500
+      &__tip
+        display: inline-block
+        font-size: 12px
+        line-height: 15px
+        color: rgba($fontColor, .7)
+        font-weight: 400
+        position: relative
+        margin-left: 30px
+
+        .ico
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+        span
+          padding-left: 20px
+
       span
         margin-top: 5px
         display: inline-block
+        vertical-align: middle
   &__progress-left
     margin-top: 10px
     color: rgba($fontColor, .7)
@@ -148,8 +166,18 @@
     display: flex
     flex-wrap: nowrap
     justify-content: space-between
+    align-items: center
     padding: 10px 0
     border-bottom: 1px solid $borderColor
+    &__number
+      display: inline-block
+      border-radius: 15px
+      padding: 3px 8px
+      background: $blue
+      line-height: 1
+      font-size: 20px
+      font-weight: 700
+      color: white
     &__name
       display: inline-block
       font-size: 18px
@@ -165,10 +193,22 @@
       border-radius: 6px
       color: white
       padding: 5px 10px
+      span
+        font-weight: 400
 
     &__controls
       a:last-child .ico
         margin-right: 0px
+      .btn
+        margin-right: 20px
+        text-align: center
+        background: white
+        &:hover
+          background: $blue
+        &:last-child
+          margin-right: 0
+          .ico
+            margin-right: 0
       .ico
         width: 21px
         height: 14px
@@ -179,6 +219,25 @@
         transition: margin-bottom .3s ease-in-out
         &:hover
           margin-bottom: -5px
+
+    // Onclick
+    &__content
+      overflow: hidden
+      visibility: hidden
+      pointer-events: none
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      align-items: flex-start
+      padding: 15px 30px 15px 50px
+      transform: translate3d(-100%, 0, 0)
+      position: absolute
+      &.active
+        position: relative
+        visibility: visible
+        pointer-events: auto
+        transition: transform .4s ease-in-out
+        transform: translate3d(0, 0, 0)
 
   &__notes
     display: flex
@@ -272,7 +331,7 @@
 
 // results
 
-.dash-results
+.dash-results, .dash-fav-cities
   .dashboard__block__heading
     margin-bottom: 20px
   &__wrapper
@@ -383,3 +442,61 @@
         margin-bottom: 13px
         &:last-child
           margin-bottom: 0
+
+
+// Dashboard Favorite cities
+
+.dash-fav-cities
+  // nested above
+  .dashboard__favorite-city
+    cursor: pointer
+    transition: background .4s ease-in-out, padding .3s ease-in-out
+    &:hover, &.active
+      background: rgba($borderColor, .3)
+      padding-left: 10px
+      padding-right: 10px
+    &.active
+
+
+.dashboard__city-note
+  display: block
+  position: relative
+  width: 130px
+  height: 130px
+  .ico-dash-note-bg
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 1
+  .ico-dash-note-body
+    position: absolute
+    left: 50%
+    top: 15px
+    transform: translateX(-50%)
+    z-index: 2
+  .ico-dash-note-add
+    position: absolute
+    left: 50%
+    bottom: 26px
+    transform: translateX(-50%)
+    z-index: 3
+    transition: box-shadow .2s ease, transform .5s ease-in-out
+  span
+    text-align: center
+    display: inline-block
+    font-size: 16px
+    position: absolute
+    bottom: 0
+    width: 100%
+    transition: all .4s ease
+  &:hover
+    span
+      color: $blue
+      font-weight: 700
+    .ico-dash-note-add
+      transform: translateX(-50%) rotate(180deg)
+      box-shadow: -2px -2px 4px rgba(black, .0)
+    .ico-dash-note-add.editable
+      transform: translateX(-50%) rotateY(-180deg)
