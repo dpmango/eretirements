@@ -15,6 +15,7 @@
     <script src="js/libs/jquery.magnific-popup.min.js"></script>
     <!-- script(src="js/handlebars-logic-main.js")-->
     <script src="js/libs/tinymce/tinymce.min.js"></script>
+    <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
     <!--build:css css/style.min.css--><link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css" type="text/css" />
@@ -23,6 +24,7 @@
 <link rel="stylesheet" href="css/libs/hamburgers.min.css" type="text/css" />
 <link rel="stylesheet" href="css/libs/jquery-ui.min.css" type="text/css" />
 <link rel="stylesheet" href="css/libs/jquery-ui.theme.min.css" type="text/css" />
+<link rel="stylesheet" href="css/libs/owl.carousel.min.css" type="text/css" />
 <link rel="stylesheet" href="css/process.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!--endbuild-->
@@ -108,8 +110,46 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="whitebox dash-fav-cities__wrapper">
-              <div class="dashboard__block__heading"><span>Eddie’s Notes</span>
-                <div class="fl--right"><a class="btn btn__blue--nav btn__blue--medium btn__blue" href="#">View Your Top Cities Report</a></div>
+              <div class="dashboard__block__heading"><span>Eddie’s City Specific Notes</span></div>
+              <div class="dashboard__notes-cities owl-carousel owl--arrow-nav" id="owlNotesCity"><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">New York</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">San francisco</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">Orlando</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">Las Vegas</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">Los Angeles</div></a><a class="dashboard__note-compact" href="#"><i class="ico ico-dash-note-gray"></i>
+                  <div class="dashboard__note-compact__name">New Orleans</div></a></div>
+              <!-- NotePad-->
+              <div class="dashboard__block__heading mt25"><span>Eddie’s NotePad</span></div>
+              <div class="dashboard__notepad">
+                <textarea><h2>Got questions or need help?</h2>
+<ul>
+<li>Our <a href="//www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+<li>Have a specific question? Visit the <a href="http://community.tinymce.com/forum/">Community Forum</a>.</li>
+<li>We also offer enterprise grade support as part of <a href="http://tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
+</ul></textarea>
+              </div>
+              <!-- Blogposts-->
+              <div class="dashboard__block__heading mt50"><span>Eddie’s Saved Blog Posts</span></div>
+              <div class="row mt25">
+                <div class="dashboard__notes-blog owl-carousel owl--arrow-nav" id="owlNotesBlog">
+                  <div class="row">
+                    <div class="col-sm-12"><a class="dashboard__blog" href="#"><img class="img-fluid" src="images/dash_blog.png">
+                        <div class="dashboard__blog__name">Big Cities, Big Fun</div>
+                        <div class="dashboard__blog__match">08.12.2016</div></a></div>
+                    <div class="col-sm-12"><a class="dashboard__blog dashboard__blog--dark-bg" href="#"><img class="img-fluid" src="images/dash_blog.png">
+                        <div class="dashboard__blog__name">Big Cities, Big Fun</div>
+                        <div class="dashboard__blog__match">08.12.2016</div></a></div>
+                    <div class="col-sm-12"><a class="dashboard__blog dashboard__blog--dark-bg" href="#"><img class="img-fluid" src="images/dash_blog.png">
+                        <div class="dashboard__blog__name">Big Cities, Big Fun</div>
+                        <div class="dashboard__blog__match">08.12.2016</div></a></div>
+                    <div class="col-sm-12"><a class="dashboard__blog" href="#"><img class="img-fluid" src="images/dash_blog.png">
+                        <div class="dashboard__blog__name">Big Cities, Big Fun</div>
+                        <div class="dashboard__blog__match">08.12.2016</div></a></div>
+                    <div class="col-sm-12"><a class="dashboard__blog" href="#"><img class="img-fluid" src="images/dash_blog.png">
+                        <div class="dashboard__blog__name">Big Cities, Big Fun</div>
+                        <div class="dashboard__blog__match">08.12.2016</div></a></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

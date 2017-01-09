@@ -243,11 +243,63 @@ $(document).ready(function(){
     height: 130
   });
 
-  // call editor
+  // full featured preset
+  tinymce.init({
+    selector: '.dashboard__notepad textarea',
+    height: 300,
+    plugins: [
+      'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      'searchreplace wordcount visualblocks visualchars code fullscreen',
+      'insertdatetime media nonbreaking save table contextmenu directionality',
+      'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc'
+    ],
+    toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+    toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+  });
+
+
+  // bind editor
   $('.dashboard__city-note').on('click', function(){
     $(this).next().fadeToggle();
   });
   $('.dashboard__textnote__saver').on('click', function(){
     $(this).parent().fadeToggle();
   });
+
+  // OWL carousel
+  $('#owlNotesBlog').owlCarousel({
+    loop: true,
+    // margin: 10,
+    nav: true,
+    nestedItemSelector: 'col-sm-12',
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        992:{
+            items:4
+        }
+    }
+  })
+
+  $('#owlNotesCity').owlCarousel({
+    loop: true,
+    // margin: 10,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        992:{
+            items:5
+        }
+    }
+  })
+
 });

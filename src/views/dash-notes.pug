@@ -30,10 +30,73 @@ html
           .col-sm-12
             .whitebox.dash-fav-cities__wrapper
               .dashboard__block__heading
-                span Eddie’s Notes
+                span Eddie’s City Specific Notes
 
-                .fl--right
-                  a.btn.btn__blue--nav.btn__blue--medium.btn__blue(href="#") View Your Top Cities Report
+              .dashboard__notes-cities.owl-carousel.owl--arrow-nav#owlNotesCity
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name New York
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name San francisco
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name Orlando
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name Las Vegas
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name Los Angeles
+                a(href="#").dashboard__note-compact
+                  i.ico.ico-dash-note-gray
+                  .dashboard__note-compact__name New Orleans
+
+              // NotePad
+              .dashboard__block__heading.mt25
+                span Eddie’s NotePad
+
+              .dashboard__notepad
+                textarea
+                  <h2>Got questions or need help?</h2>
+                  <ul>
+                    <li>Our <a href="//www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+                    <li>Have a specific question? Visit the <a href="http://community.tinymce.com/forum/">Community Forum</a>.</li>
+                    <li>We also offer enterprise grade support as part of <a href="http://tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
+                  </ul>
+
+              // Blogposts
+              .dashboard__block__heading.mt50
+                span Eddie’s Saved Blog Posts
+
+              .row.mt25
+                .dashboard__notes-blog.owl-carousel.owl--arrow-nav#owlNotesBlog
+                  .row
+                    .col-sm-12
+                      a.dashboard__blog(href="#")
+                        img.img-fluid(src="images/dash_blog.png")
+                        .dashboard__blog__name Big Cities, Big Fun
+                        .dashboard__blog__match 08.12.2016
+                    .col-sm-12
+                      a.dashboard__blog.dashboard__blog--dark-bg(href="#")
+                        img.img-fluid(src="images/dash_blog.png")
+                        .dashboard__blog__name Big Cities, Big Fun
+                        .dashboard__blog__match 08.12.2016
+                    .col-sm-12
+                      a.dashboard__blog.dashboard__blog--dark-bg(href="#")
+                        img.img-fluid(src="images/dash_blog.png")
+                        .dashboard__blog__name Big Cities, Big Fun
+                        .dashboard__blog__match 08.12.2016
+                    .col-sm-12
+                      a.dashboard__blog(href="#")
+                        img.img-fluid(src="images/dash_blog.png")
+                        .dashboard__blog__name Big Cities, Big Fun
+                        .dashboard__blog__match 08.12.2016
+                    .col-sm-12
+                      a.dashboard__blog(href="#")
+                        img.img-fluid(src="images/dash_blog.png")
+                        .dashboard__blog__name Big Cities, Big Fun
+                        .dashboard__blog__match 08.12.2016
 
 
     include shared/footer.pug

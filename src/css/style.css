@@ -160,6 +160,9 @@ b {
 .mt40 {
   margin-top: 40px; }
 
+.mt50 {
+  margin-top: 50px; }
+
 .mt60 {
   margin-top: 60px; }
 
@@ -2783,6 +2786,38 @@ b {
     right: 15px;
     font-size: 14px;
     font-weight: 500; }
+
+.dashboard__notes-cities .dashboard__note-compact {
+  margin: 5px 10px; }
+
+.owl--arrow-nav .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 15px; }
+
+.owl--arrow-nav .owl-next, .owl--arrow-nav .owl-prev {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  border: 1px solid #D5D9DB;
+  -webkit-transition: border .4s ease;
+  transition: border .4s ease;
+  position: relative; }
+  .owl--arrow-nav .owl-next:hover, .owl--arrow-nav .owl-prev:hover {
+    border-color: #0f4164;
+    z-index: 2; }
+
+.owl--arrow-nav .owl-next {
+  background: url("../img/owl-next.svg") no-repeat center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: -1px; }
+
+.owl--arrow-nav .owl-prev {
+  background: url("../img/owl-prev.svg") no-repeat center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 
 .dashboard__navigation {
   display: -webkit-box;
