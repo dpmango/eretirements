@@ -234,4 +234,20 @@ $(document).ready(function(){
   	});
   });
 
+  // tinymce
+  tinymce.init({
+    selector: '.dashboard__textnote textarea',
+    plugins: 'advlist save autolink link image lists charmap hr anchor pagebreak spellchecker template textcolor colorpicker',
+    toolbar: 'bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist | link image | forecolor backcolor',
+    menubar: '',
+    height: 130
+  });
+
+  // call editor
+  $('.dashboard__city-note').on('click', function(){
+    $(this).next().fadeToggle();
+  });
+  $('.dashboard__textnote__saver').on('click', function(){
+    $(this).parent().fadeToggle();
+  });
 });
